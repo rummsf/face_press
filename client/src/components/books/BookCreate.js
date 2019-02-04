@@ -11,7 +11,7 @@ class BookCreate extends React.Component {
   render() {
     return (
       <div>
-        <h3>Create a Book</h3>
+        <h3>Add a new book</h3>
         <BookForm onSubmit={this.onSubmit} />
       </div>
     );

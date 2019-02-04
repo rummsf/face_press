@@ -28,7 +28,7 @@ class BookList extends React.Component {
       return (
         <div className="item" key={book.id}>
           {this.renderAdmin(book)}
-          <i className="large middle aligned icon camera" />
+          <i className="small middle aligned icon circle blank blue" />
           <div className="content">
             <Link to={`/books/${book.id}`} className="header">
               {book.title}
@@ -44,7 +44,7 @@ class BookList extends React.Component {
       return (
         <div style={{ textAlign: "right" }}>
           <Link to="/books/new" className="ui button primary">
-            Create Book
+            Add new book
           </Link>
         </div>
       );
@@ -54,8 +54,8 @@ class BookList extends React.Component {
   render() {
     return (
       <div>
-        <h2>Books</h2>
-        <div className="ui celled list">{this.renderList()}</div>
+        <h2>Available books</h2>
+        <div className="ui celled relaxed list">{this.renderList()}</div>
         {this.renderCreate()}
       </div>
     );

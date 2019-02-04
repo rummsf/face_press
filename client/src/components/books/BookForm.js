@@ -32,12 +32,18 @@ class BookForm extends React.Component {
         onSubmit={this.props.handleSubmit(this.onSubmit)}
         className="ui form error"
       >
-        <Field name="title" component={this.renderInput} label="Enter title" />
+        <Field name="title" component={this.renderInput} label="Title:" />
         <Field
           name="description"
           component={this.renderInput}
-          label="Enter description"
+          label="Description:"
         />
+        <Field
+          name="pages"
+          component={this.renderInput}
+          label="Number of pages:"
+        />
+        <Field name="price" component={this.renderInput} label="Price:" />
         <button className="ui button primary">Submit</button>
       </form>
     );
@@ -48,10 +54,13 @@ const validate = formValues => {
   const errors = {};
 
   if (!formValues.title) {
-    errors.title = "Title?";
+    errors.title = "A new book needs a title";
   }
   if (!formValues.description) {
-    errors.description = "Description?";
+    errors.description = "A new book needs a description";
+  }
+  if (!formValues.price) {
+    errors.price = "A new book needs a price";
   }
   return errors;
 };
