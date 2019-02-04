@@ -1,7 +1,7 @@
 export const SIGN_IN = "SIGN_IN";
 export const SIGN_OUT = "SIGN_OUT";
-export const CREATE_STREAM = "CREATE_STREAM";
-export const FETCH_STREAM = "FETCH_STREAM";
-export const FETCH_STREAMS = "FETCH_STREAMS";
-export const DELETE_STREAM = "DELETE_STREAM";
-export const EDIT_STREAM = "EDIT_STREAM";
+export const CREATE_BOOK = "CREATE_BOOK";
+export const FETCH_BOOK = "FETCH_BOOK";
+export const FETCH_BOOKS = "FETCH_BOOKS";
+export const DELETE_BOOK = "DELETE_BOOK";
+export const EDIT_BOOK = "EDIT_BOOK";

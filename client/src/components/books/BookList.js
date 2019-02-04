@@ -1,24 +1,21 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchStreams } from "../../actions";
+import { fetchBooks } from "../../actions";
 import { Link } from "react-router-dom";
 
-class StreamList extends React.Component {
+class BookList extends React.Component {
   componentDidMount() {
-    this.props.fetchStreams();
+    this.props.fetchBooks();
   }
 
-  renderAdmin(stream) {
-    if (stream.userId === this.props.currentUserId) {
+  renderAdmin(book) {
+    if (book.userId === this.props.currentUserId) {
       return (
         <div className="right floated content">
-          <Link to={`/streams/edit/${stream.id}`} className="ui button primary">
+          <Link to={`/books/edit/${book.id}`} className="ui button primary">
             Edit
           </Link>
-          <Link
-            to={`/streams/delete/${stream.id}`}
-            className="ui button negative"
-          >
+          <Link to={`/books/delete/${book.id}`} className="ui button negative">
             Delete
           </Link>
         </div>
@@ -27,16 +24,15 @@ class StreamList extends React.Component {
   }
 
   renderList() {
-    return this.props.streams.map(stream => {
+    return this.props.books.map(book => {
       return (
-        <div className="item" key={stream.id}>
-          {this.renderAdmin(stream)}
+        <div className="item" key={book.id}>
+          {this.renderAdmin(book)}
           <i className="large middle aligned icon camera" />
           <div className="content">
-            <Link to={`/streams/${stream.id}`} className="header">
-              {stream.title}
+            <Link to={`/books/${book.id}`} className="header">
+              {book.title}
             </Link>
-            <div className="description">{stream.description}</div>
           </div>
         </div>
       );
@@ -47,8 +43,8 @@ class StreamList extends React.Component {
     if (this.props.isSignedIn) {
       return (
         <div style={{ textAlign: "right" }}>
-          <Link to="/streams/new" className="ui button primary">
-            Create Stream
+          <Link to="/books/new" className="ui button primary">
+            Create Book
           </Link>
         </div>
       );
@@ -58,7 +54,7 @@ class StreamList extends React.Component {
   render() {
     return (
       <div>
-        <h2>Streams</h2>
+        <h2>Books</h2>
         <div className="ui celled list">{this.renderList()}</div>
         {this.renderCreate()}
       </div>
@@ -68,7 +64,7 @@ class StreamList extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    streams: Object.values(state.streams),
+    books: Object.values(state.books),
     currentUserId: state.auth.userId,
     isSignedIn: state.auth.isSignedIn
   };
@@ -76,5 +72,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { fetchStreams }
-)(StreamList);
+  { fetchBooks }
+)(BookList);

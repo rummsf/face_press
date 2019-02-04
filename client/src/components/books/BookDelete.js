@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 import Modal from "../Modal";
 import history from "../../history";
-import { fetchStream, deleteStream } from "../../actions";
+import { fetchBook, deleteBook } from "../../actions";
 
-class StreamDelete extends React.Component {
+class BookDelete extends React.Component {
   componentDidMount() {
-    this.props.fetchStream(this.props.match.params.id);
+    this.props.fetchBook(this.props.match.params.id);
   }
 
   renderActions() {
@@ -16,7 +16,7 @@ class StreamDelete extends React.Component {
     return (
       <React.Fragment>
         <button
-          onClick={() => this.props.deleteStream(id)}
+          onClick={() => this.props.deleteBook(id)}
           className="ui button negative"
         >
           Delete
@@ -29,16 +29,16 @@ class StreamDelete extends React.Component {
   }
 
   renderContent() {
-    if (!this.props.stream) {
+    if (!this.props.book) {
       return "You are about to delete this";
     }
-    return `You are about to delete ${this.props.stream.title}`;
+    return `You are about to delete ${this.props.book.title}`;
   }
 
   render() {
     return (
       <Modal
-        title="Delete Stream"
+        title="Delete Book"
         content={this.renderContent()}
         actions={this.renderActions()}
         onDismiss={() => history.push("/")}
@@ -53,5 +53,5 @@ const mapStateToProps = (state, ownProps) => {
 
 export default connect(
   mapStateToProps,
-  { fetchStream, deleteStream }
-)(StreamDelete);
+  { fetchBook, deleteBook }
+)(BookDelete);
