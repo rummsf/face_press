@@ -7,7 +7,7 @@ E-commerce website (re-build of face-press.org)
 Current functionality:
 
 * Catalogue of books, with index and show pages.
-* Add new book to catalogue, delete book within catalogue.
+* (Admin) Add new book to catalogue, delete book within catalogue.
 * Google Auth sign-in.
 
 Features under development:
