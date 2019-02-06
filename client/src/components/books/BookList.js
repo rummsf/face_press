@@ -12,7 +12,10 @@ class BookList extends React.Component {
     if (book.userId === this.props.currentUserId) {
       return (
         <div className="right floated content">
-          <Link to={`/books/edit/${book.id}`} className="ui button primary">
+          <Link
+            to={`/books/edit/${book.id}`}
+            className="ui button primary green"
+          >
             Edit
           </Link>
           <Link to={`/books/delete/${book.id}`} className="ui button negative">
@@ -43,7 +46,7 @@ class BookList extends React.Component {
     if (this.props.isSignedIn) {
       return (
         <div style={{ textAlign: "right" }}>
-          <Link to="/books/new" className="ui button primary">
+          <Link to="/books/new" className="ui button primary olive">
             Add new book
           </Link>
         </div>
