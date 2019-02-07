@@ -65,7 +65,7 @@ class BookList extends React.Component {
   render() {
     return (
       <div>
-        <h2>Available books</h2>
+        <h2>All Books</h2>
         <div className="ui grid">
           <div>{this.renderList()}</div>
           {this.renderCreate()}
