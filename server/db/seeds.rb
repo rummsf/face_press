@@ -50,7 +50,7 @@ books =[
   },
   {
     title: "Graft and Corruption: Shakespeare’s Sonnet 15",
-    image: "/public/images/graft.jpg",
+    image: "https://i.imgur.com/RhlTdE9.jpg",
     year: 2015,
     pages: 170,
     price: 3,

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import GoogleAuth from "./GoogleAuth";
+import image from "../images/face-press-banner.jpg";
 
 const Header = () => {
   return (
@@ -8,6 +9,8 @@ const Header = () => {
       <Link to="/" className="item">
         Book
       </Link>
+      <img src={image} />
+      <hr />
       <div className="center aligned">
         <h1>@_@</h1>
       </div>
