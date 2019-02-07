@@ -1,0 +1,5 @@
+export const CREATE_WRITER = "CREATE_WRITER";
+export const FETCH_WRITER = "FETCH_WRITER";
+export const FETCH_WRITERS = "FETCH_WRITERS";
+export const DELETE_WRITER = "DELETE_WRITER";
+export const EDIT_WRITER = "EDIT_WRITER";

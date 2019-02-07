@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchBooks } from "../../actions";
+import { fetchBooks } from "../../actions/books";
 import { Link } from "react-router-dom";
 
 class BookList extends React.Component {
@@ -31,11 +31,19 @@ class BookList extends React.Component {
       return (
         <div className="item" key={book.id}>
           {this.renderAdmin(book)}
-          <i className="small middle aligned icon circle blank blue" />
           <div className="content">
             <Link to={`/books/${book.id}`} className="header">
               {book.title}
             </Link>
+            <div>
+              <img src={book.image} alt="nearly" className="img-responsive" />
+            </div>
+            <div>{book.writer_book}</div>
+            <div style={{ textAligh: "right" }}>
+              {/* <Link to="<input type=" image" src="https://www.paypal.com/en_US/i/btn/x-click-but22.gif" className="ui button primary">
+                Purchase
+              </Link> */}
+            </div>
           </div>
         </div>
       );
@@ -45,7 +53,7 @@ class BookList extends React.Component {
   renderCreate() {
     if (this.props.isSignedIn) {
       return (
-        <div style={{ textAlign: "right" }}>
+        <div style={{ textAlign: "left" }}>
           <Link to="/books/new" className="ui button primary olive">
             Add new book
           </Link>

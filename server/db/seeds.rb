@@ -5,25 +5,25 @@ WriterBook.destroy_all
 books =[
   {
     title: "Mother; Beautiful Things",
-    image: "",
+    image: "/public/images/mother-cover.jpg",
     year: 2017,
-    pages: 150,
+    pages: 36,
     price: 5,
     availability: 44,
-    description: "36 pages, saddle stitched into black card wrappers, in sparkly integral dust jacket; azure endpapers.  Digitally printed in black, blue, and red throughout."
+    description: "Saddle stitched into black card wrappers, in sparkly integral dust jacket; azure endpapers.  Digitally printed in black, blue, and red throughout."
   },
   {
     title: "Confection",
-    image: "",
+    image: "/public/images/confection.jpg",
     year: 2011,
-    pages: 200,
+    pages: 16,
     price: 4,
     availability: 0,
-    description: "Cover art by Raul Perdomo.  Edition of 200 copies.  16pp"
+    description: "Cover art by Raul Perdomo.  Edition of 200 copies."
   },
   {
     title: "The Artwar Reader",
-    image: "",
+    image: "/public/images/artwar.jpg",
     year: 2012,
     pages: 16,
     price: 3,
@@ -32,7 +32,7 @@ books =[
   },
   {
     title: "Urgent Film",
-    image: "",
+    image: "/public/images/urgent.jpg",
     year: 2012,
     pages: 12,
     price: 5,
@@ -41,7 +41,7 @@ books =[
   },
   {
     title: "Al-Dente",
-    image: "",
+    image: "https://imgur.com/a/xaKlHj5",
     year: 2014,
     pages: 250,
     price: 6,
@@ -50,7 +50,7 @@ books =[
   },
   {
     title: "Graft and Corruption: Shakespeare’s Sonnet 15",
-    image: "",
+    image: "/public/images/graft.jpg",
     year: 2015,
     pages: 170,
     price: 3,
@@ -59,7 +59,7 @@ books =[
   },
   {
     title: "The Last Shyness",
-    image: "",
+    image: "/public/images/the-last-shyness.jpg",
     year: 2017,
     pages: 32,
     price: 4,
@@ -68,7 +68,7 @@ books =[
   },
   {
     title: "Got On",
-    image: "",
+    image: "/public/images/got.jpg",
     year: 2011,
     pages: 20,
     price: 5,
@@ -77,7 +77,7 @@ books =[
   },
   {
     title: "Average Cabin",
-    image: "",
+    image: "/public/images/average-cabin.jpg",
     year: 2015,
     pages: 250,
     price: 6,
@@ -86,43 +86,43 @@ books =[
   },
   {
     title: "Poems (2012-2017)",
-    image: "",
+    image: "/public/images/poems(2012-2017).jpg",
     year: 2017,
     pages: 144,
     price: 3,
     availability: 0,
-    description: "144 pages, perfect bound, in dust jacket.  Letterpressed spine label."
+    description: "Perfect bound, in dust jacket.  Letterpressed spine label."
   },
   {
     title: "Poems",
-    image: "",
+    image: "/public/images/poems.jpg",
     year: 2017,
-    pages: 200,
+    pages: 28,
     price: 7,
     availability: 0,
-    description: "Covers letterpressed in silver ink. 28pp."
+    description: "Covers letterpressed in silver ink."
   },
   {
     title: "Nine Plays",
-    image: "",
+    image: "/public/images/nine-plays.jpg",
     year: 2014,
-    pages: 100,
+    pages: 367,
     price: 7,
     availability: 0,
-    description: "Edited and introduced by Ian Heames.  Afterword by J.H. Prynne.  Hardback in dust jacket.  367pp"
+    description: "Edited and introduced by Ian Heames.  Afterword by J.H. Prynne.  Hardback in dust jacket."
   },
   {
     title: "Regrets, after Joachim du Bellay and others",
-    image: "",
+    image: "/public/images/regrets.jpg",
     year: 2013,
     pages: 20,
     price: 5,
     availability: 0,
-    description: "Versions of poems by du Bellay, de Sponde, and Machado.  20pp hand-sewn booklet"
+    description: "Versions of poems by du Bellay, de Sponde, and Machado.  Hand-sewn booklet"
   },
   {
     title: "‘Sonatine’",
-    image: "",
+    image: "/public/images/sonatine.jpg",
     year: 2015,
     pages: 70,
     price: 6.50,
@@ -131,7 +131,7 @@ books =[
   },
   {
     title: "Arcobat",
-    image: "",
+    image: "/public/images/arcobat.jpg",
     year: 2012,
     pages: 16,
     price: 5,
@@ -140,7 +140,7 @@ books =[
   },
   {
     title: "Nettle Range Bladefear",
-    image: "",
+    image: "/public/images/nettles.jpg",
     year: 2009,
     pages: 20,
     price: 4,
@@ -149,7 +149,7 @@ books =[
   },
   {
     title: "Team You",
-    image: "",
+    image: "/public/images/team.jpg",
     year: 2012,
     pages: 24,
     price: 5,
