@@ -39,7 +39,7 @@ class BookList extends React.Component {
               <img src={book.image} alt="nearly" className="img-responsive" />
             </div>
             <div>{book.writer_book}</div>
-            <div style={{ textAligh: "right" }}>
+            <div style={{ textAlign: "right" }}>
               {/* <Link to="<input type=" image" src="https://www.paypal.com/en_US/i/btn/x-click-but22.gif" className="ui button primary">
                 Purchase
               </Link> */}
@@ -66,8 +66,10 @@ class BookList extends React.Component {
     return (
       <div>
         <h2>Available books</h2>
-        <div className="ui celled relaxed list">{this.renderList()}</div>
-        {this.renderCreate()}
+        <div className="ui grid">
+          <div>{this.renderList()}</div>
+          {this.renderCreate()}
+        </div>
       </div>
     );
   }

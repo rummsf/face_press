@@ -13,7 +13,8 @@
     "redux": "^4.0.1",
     "redux-form": "^8.1.0",
     "redux-form-validators": "^2.7.5",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "semantic-ui-react": "^0.85.0"
   },
   "scripts": {
     "start": "react-scripts start",
