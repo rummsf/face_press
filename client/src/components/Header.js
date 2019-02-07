@@ -8,6 +8,9 @@ const Header = () => {
       <Link to="/" className="item">
         Book
       </Link>
+      <div className="center aligned">
+        <h1>@_@</h1>
+      </div>
       <div className="right menu">
         <Link to="/" className="item">
           All Books

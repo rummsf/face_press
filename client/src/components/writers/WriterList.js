@@ -63,7 +63,7 @@ class WriterList extends React.Component {
   render() {
     return (
       <div>
-        <h2>Available writers</h2>
+        <h2>Writers</h2>
         <div className="ui celled relaxed list">{this.renderList()}</div>
         {this.renderCreate()}
       </div>

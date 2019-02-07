@@ -71,7 +71,7 @@ export const createWriter = formValues => async (dispatch, getState) => {
 };
 
 export const fetchWriters = () => async dispatch => {
-  const response = await writers.get("/api/v1/books");
+  const response = await writers.get("/api/v1/writers");
   dispatch({ type: FETCH_WRITERS, payload: response.data });
 };
 
