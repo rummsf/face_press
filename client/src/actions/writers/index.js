@@ -1,4 +1,4 @@
-import writers from "../../apis/books";
+import writers from "../../apis/items";
 import history from "../../history";
 import {
   CREATE_WRITER,

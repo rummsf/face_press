@@ -1,4 +1,4 @@
-import { books, writers } from "../apis/books";
+import items from "../apis/items";
 import history from "../history";
 import {
   SIGN_IN,
@@ -8,12 +8,13 @@ import {
   FETCH_BOOKS,
   DELETE_BOOK,
   EDIT_BOOK,
+  //
   CREATE_WRITER,
   FETCH_WRITER,
   FETCH_WRITERS,
   DELETE_WRITER,
-  EDIT_WRITER,
-  UPDATE_FILTER
+  EDIT_WRITER
+  // UPDATE_FILTER
 } from "./types";
 
 export const signIn = userId => {
@@ -29,29 +30,29 @@ export const signOut = userId => {
 
 export const createBook = formValues => async (dispatch, getState) => {
   const { userId } = getState().auth;
-  const response = await books.post("/api/v1/books", { ...formValues, userId });
+  const response = await items.post("/api/v1/items", { ...formValues, userId });
   dispatch({ type: CREATE_BOOK, payload: response.data });
   history.push("/");
 };
 
 export const fetchBooks = () => async dispatch => {
-  const response = await books.get("/api/v1/books");
+  const response = await items.get("/api/v1/items");
   dispatch({ type: FETCH_BOOKS, payload: response.data });
 };
 
 export const fetchBook = id => async dispatch => {
-  const response = await books.get(`api/v1/books/${id}`);
+  const response = await items.get(`api/v1/items/${id}`);
   dispatch({ type: FETCH_BOOK, payload: response.data });
 };
 
 export const editBook = (id, formValues) => async dispatch => {
-  const response = await books.patch(`api/v1/books/${id}`, formValues);
+  const response = await items.patch(`api/v1/items/${id}`, formValues);
   dispatch({ type: EDIT_BOOK, payload: response.data });
   history.push("/");
 };
 
 export const deleteBook = id => async dispatch => {
-  await books.delete(`/api/v1/books/${id}`);
+  await items.delete(`/api/v1/items/${id}`);
   dispatch({ type: DELETE_BOOK, payload: id });
   history.push("/");
 };
@@ -60,7 +61,7 @@ export const deleteBook = id => async dispatch => {
 
 export const createWriter = formValues => async (dispatch, getState) => {
   const { userId } = getState().auth;
-  const response = await writers.post("/api/v1/writers", {
+  const response = await items.post("/api/v1/items", {
     ...formValues,
     userId
   });
@@ -69,28 +70,29 @@ export const createWriter = formValues => async (dispatch, getState) => {
 };
 
 export const fetchWriters = () => async dispatch => {
-  const response = await writers.get("/api/v1/writers");
+  const response = await items.get("/api/v1/items");
   dispatch({ type: FETCH_WRITERS, payload: response.data });
 };
 
 export const fetchWriter = id => async dispatch => {
-  const response = await writers.get(`api/v1/writers/${id}`);
+  const response = await items.get(`api/v1/items/${id}`);
   dispatch({ type: FETCH_WRITER, payload: response.data });
 };
 
 export const editWriter = (id, formValues) => async dispatch => {
-  const response = await writers.patch(`api/v1/writers/${id}`, formValues);
+  const response = await items.patch(`api/v1/items/${id}`, formValues);
   dispatch({ type: EDIT_WRITER, payload: response.data });
   history.push("/");
 };
 
 export const deleteWriter = id => async dispatch => {
-  await writers.delete(`/api/v1/writers/${id}`);
+  await items.delete(`/api/v1/items/${id}`);
   dispatch({ type: DELETE_WRITER, payload: id });
   history.push("/");
 };
-//
 
-export function updateFilter(newFilter) {
-  return { type: UPDATE_FILTER, newFilter };
-}
+// FILTER
+
+// export function updateFilter(newFilter) {
+//   return { type: UPDATE_FILTER, newFilter };
+// }

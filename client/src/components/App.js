@@ -9,7 +9,7 @@ import BookDelete from "./books/BookDelete";
 import WriterList from "../containers/WriterList";
 import Header from "./Header";
 import HomePage from "./HomePage";
-import Search from "./Search";
+// import Search from "./Search";
 import history from "../history";
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
       <Router history={history}>
         <div>
           <Header />
-          <Search />
+          {/* <Search /> */}
           <Switch>
             <Route path="/" exact component={HomePage} />
             <Route path="/books" exact component={BookList} />

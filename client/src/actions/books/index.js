@@ -1,4 +1,4 @@
-import books from "../../apis/books";
+import books from "../../apis/items";
 import history from "../../history";
 import {
   SIGN_IN,

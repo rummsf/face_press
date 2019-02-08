@@ -1,9 +1,9 @@
 import React from "react";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import GoogleAuth from "./GoogleAuth";
 import image from "../images/face-press-banner.jpg";
-import { updateFilter } from "../actions/index";
+// import { updateFilter } from "../actions/index";
 
 class Header extends React.Component {
   render() {
@@ -33,13 +33,15 @@ class Header extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    filter: state.filter
-  };
-};
+// const mapStateToProps = state => {
+//   return {
+//     filter: state.filter
+//   };
+// };
 
-export default connect(
-  mapStateToProps,
-  { updateFilter }
-)(Header);
+// export default connect(
+//   mapStateToProps,
+//   { updateFilter }
+// )(Header);
+
+export default Header;
