@@ -1,4 +1,4 @@
-import books from "../apis/books";
+import { books, writers } from "../apis/books";
 import history from "../history";
 import {
   SIGN_IN,
@@ -7,15 +7,13 @@ import {
   FETCH_BOOK,
   FETCH_BOOKS,
   DELETE_BOOK,
-  EDIT_BOOK
-} from "./types";
-import writers from "../apis/books";
-import {
+  EDIT_BOOK,
   CREATE_WRITER,
   FETCH_WRITER,
   FETCH_WRITERS,
   DELETE_WRITER,
-  EDIT_WRITER
+  EDIT_WRITER,
+  UPDATE_FILTER
 } from "./types";
 
 export const signIn = userId => {
@@ -91,3 +89,8 @@ export const deleteWriter = id => async dispatch => {
   dispatch({ type: DELETE_WRITER, payload: id });
   history.push("/");
 };
+//
+
+export function updateFilter(newFilter) {
+  return { type: UPDATE_FILTER, newFilter };
+}
