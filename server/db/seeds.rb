@@ -130,7 +130,7 @@ books =[
     description: "Large folded broadside. Risograph printed. Edition of c. 70 copies."
   },
   {
-    title: "Arcobat",
+    title: "Acrobat",
     image: "/public/images/arcobat.jpg",
     year: 2012,
     pages: 16,
@@ -170,70 +170,70 @@ writers = [
   },
   {
     name: "Cassels, Imogen",
-    biography: "",
-    image: "",
+    biography: "PhD student",
+    image: "https://imgur.com/o2RbsjR",
     url: "https://www.english.cam.ac.uk/people/graduates/Imogen.Cassels"
   },
   {
     name: "Dobran, Ryan",
-    biography: "",
-    image: "",
+    biography: "Content Manager",
+    image: "https://imgur.com/UMMeVbL",
     url: "https://ryandobran.com/"
   },
   {
     name: "Keen, Jeff",
     biography: "",
-    image: "",
+    image: "https://imgur.com/IyolBXS",
     url: "http://www.jeffkeen.co.uk/"
   },
   {
     name: "Prynne, J.H.",
     biography: "",
-    image: "https://specialcollections-blog.lib.cam.ac.uk/?p=16166",
-    url: ""
+    image: "https://imgur.com/i8gnyCY",
+    url: "https://specialcollections-blog.lib.cam.ac.uk/?p=16166"
   },
   {
     name: "Raworth, Tom",
     biography: "",
-    image: "",
+    image: "https://imgur.com/nSnEI53",
     url: "https://www.poetryfoundation.org/poets/tom-raworth"
   },
  
   {
     name: "Sogumi, Oki",
     biography: "",
-    image: "",
+    image: "https://imgur.com/RMNDmJB",
     url: "https://www.poetryproject.org/people/oki-sogumi/"
   },
   {
     name: "Stuart, Will",
-    biography: "",
-    image: "",
+    biography: "Theatre writer and poet",
+    image: "https://imgur.com/xnZNTgF",
     url: "https://www.camdram.net/shows/2010-william-fergus-stuart"
   },
  
   {
     name: "Thornton, Timothy",
     biography: "Based in Brighton.  Likes to write about ghosts, foxes, cities + the sea.",
-    image: "",
+    image: "https://imgur.com/s6UgcK3",
     url: "http://www.timothythornton.co.uk"
   },
   {
     name: "Tiplady, Jonty",
     biography: "",
-    image: "",
+    image: "https://imgur.com/m94DYfZ",
     url: "https://bebrowed.wordpress.com/2012/02/04/interview-with-jonty-tiplady-pt-1/"
   },
   {
     name: "Toal, Jefferson",
-    biography: "",
-    image: "",
-    url: "http://damnthecaesars.blogspot.com/2012/09/jefferson-toal-his-acrobat.html"
+    biography: "Children's bookseller",
+    image: "https://imgur.com/ljZc1M8",
+    url: "https://mattressofenthusiasm.com/"
   },
   {
     name: "Wallace-Hadrill, Mike",
     biography: "",
-    image: "",
+    image: "https://imgur.com/4sZolBO", 
     url: "https://www.youtube.com/watch?v=BriqHOdTCtI"
   }
   
