@@ -63,7 +63,7 @@ class BookList extends React.Component {
     return (
       <div>
         <h2>All Books</h2>
-        <div className="ui grid">
+        <div className="ui celled relaxed list">
           <div>{this.renderList()}</div>
           {this.renderCreate()}
         </div>
