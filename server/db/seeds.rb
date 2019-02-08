@@ -172,69 +172,69 @@ writers = [
     name: "Cassels, Imogen",
     biography: "",
     image: "",
-    url: ""
+    url: "https://www.english.cam.ac.uk/people/graduates/Imogen.Cassels"
   },
   {
     name: "Dobran, Ryan",
     biography: "",
     image: "",
-    url: ""
+    url: "https://ryandobran.com/"
   },
   {
     name: "Keen, Jeff",
     biography: "",
     image: "",
-    url: ""
+    url: "http://www.jeffkeen.co.uk/"
   },
   {
     name: "Prynne, J.H.",
     biography: "",
-    image: "",
+    image: "https://specialcollections-blog.lib.cam.ac.uk/?p=16166",
     url: ""
   },
   {
     name: "Raworth, Tom",
     biography: "",
     image: "",
-    url: ""
+    url: "https://www.poetryfoundation.org/poets/tom-raworth"
   },
  
   {
     name: "Sogumi, Oki",
     biography: "",
     image: "",
-    url: ""
+    url: "https://www.poetryproject.org/people/oki-sogumi/"
   },
   {
     name: "Stuart, Will",
     biography: "",
     image: "",
-    url: ""
+    url: "https://www.camdram.net/shows/2010-william-fergus-stuart"
   },
  
   {
     name: "Thornton, Timothy",
-    biography: "",
+    biography: "Based in Brighton.  Likes to write about ghosts, foxes, cities + the sea.",
     image: "",
-    url: ""
+    url: "http://www.timothythornton.co.uk"
   },
   {
     name: "Tiplady, Jonty",
     biography: "",
     image: "",
-    url: ""
+    url: "https://bebrowed.wordpress.com/2012/02/04/interview-with-jonty-tiplady-pt-1/"
   },
   {
     name: "Toal, Jefferson",
     biography: "",
     image: "",
-    url: ""
+    url: "http://damnthecaesars.blogspot.com/2012/09/jefferson-toal-his-acrobat.html"
   },
   {
     name: "Wallace-Hadrill, Mike",
     biography: "",
     image: "",
-    url: ""
+    url: "https://www.youtube.com/watch?v=BriqHOdTCtI"
   }
   
 ]

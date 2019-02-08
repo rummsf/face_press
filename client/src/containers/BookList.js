@@ -62,7 +62,7 @@ class BookList extends React.Component {
   render() {
     return (
       <div>
-        <h2>All Books</h2>
+        <h2>Books</h2>
         <div className="ui celled relaxed list">
           <div>{this.renderList()}</div>
           {this.renderCreate()}

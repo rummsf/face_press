@@ -12,16 +12,19 @@ class WriterShow extends React.Component {
       return <div>Hang on </div>;
     }
 
-    const { title, description, pages, price, image } = this.props.writer;
+    const { name, biography, image, url } = this.props.writer;
     return (
       <div>
-        <h1>{title}</h1>
+        <h1>{name}</h1>
         <div>
           <img src={image} alt="nearly" className="img-responsive" />
         </div>
-        <h4>{description}</h4>
-        <h5>{pages} pages</h5>
-        <h5>£{price}</h5>
+        <h4>{biography}</h4>
+        <div>
+          <h4>
+            Read or watch more about this writer: <a href={url}>MORE</a>
+          </h4>
+        </div>
       </div>
     );
   }
