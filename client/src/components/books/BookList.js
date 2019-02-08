@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchBooks } from "../../actions/books";
 import { Link } from "react-router-dom";
+import HomePage from "./HomePage";
 
 class BookList extends React.Component {
   componentDidMount() {
@@ -70,6 +71,7 @@ class BookList extends React.Component {
           <div>{this.renderList()}</div>
           {this.renderCreate()}
         </div>
+        <HomePage books={this.props.books} />
       </div>
     );
   }
