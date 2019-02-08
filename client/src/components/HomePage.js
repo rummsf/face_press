@@ -6,10 +6,10 @@ class HomePage extends React.Component {
       .filter(book => book.year === "2017")
       .map(book => {
         return (
-          <>
+          <div>
             {book.title}
             {book.image}
-          </>
+          </div>
         );
       });
   }

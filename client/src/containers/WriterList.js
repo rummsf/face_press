@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchWriters } from "../../actions/writers";
+import { fetchWriters } from "../actions/writers";
 import { Link } from "react-router-dom";
 
 class WriterList extends React.Component {

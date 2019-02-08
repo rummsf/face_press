@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchBooks } from "../../actions/books";
+import { fetchBooks } from "../actions/books";
 import { Link } from "react-router-dom";
-import HomePage from "../HomePage";
+import HomePage from "../components/HomePage";
 
 class BookList extends React.Component {
   componentDidMount() {
@@ -40,11 +40,7 @@ class BookList extends React.Component {
               <img src={book.image} alt="nearly" className="img-responsive" />
             </div>
             <div>{book.writer_book}</div>
-            <div style={{ textAlign: "right" }}>
-              {/* <Link to="<input type=" image" src="https://www.paypal.com/en_US/i/btn/x-click-but22.gif" className="ui button primary">
-                Purchase
-              </Link> */}
-            </div>
+            <div style={{ textAlign: "right" }} />
           </div>
         </div>
       );
