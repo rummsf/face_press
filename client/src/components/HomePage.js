@@ -1,8 +1,8 @@
 import React from "react";
 
 class HomePage extends React.Component {
-  renderNewBooks(books) {
-    return this.props.books
+  renderNewBooks(props) {
+    return props.books
       .filter(book => book.year === "2017")
       .map(book => {
         return (

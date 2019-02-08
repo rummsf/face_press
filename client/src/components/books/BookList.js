@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchBooks } from "../../actions/books";
 import { Link } from "react-router-dom";
-import HomePage from "./HomePage";
+import HomePage from "../HomePage";
 
 class BookList extends React.Component {
   componentDidMount() {
