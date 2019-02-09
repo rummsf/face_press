@@ -38,9 +38,9 @@ class WriterList extends React.Component {
             <Link to={`/writers/${writer.id}`} className="header">
               {writer.name}
             </Link>
-            {/* <div>
+            <div>
               <img src={writer.image} alt="nearly" className="img-responsive" />
-            </div> */}
+            </div>
             <div>{writer.writer_book}</div>
           </div>
         </div>

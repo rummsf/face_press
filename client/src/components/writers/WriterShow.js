@@ -22,7 +22,7 @@ class WriterShow extends React.Component {
         <h4>{biography}</h4>
         <div>
           <h4>
-            Read or watch more about this writer => <a href={url}>MORE</a>
+            <a href={url}>GO TO MORE</a>
           </h4>
         </div>
       </div>

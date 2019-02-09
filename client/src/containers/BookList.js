@@ -50,7 +50,7 @@ class BookList extends React.Component {
   renderCreate() {
     if (this.props.isSignedIn) {
       return (
-        <div style={{ textAlign: "left" }}>
+        <div style={{ textAlign: "right" }}>
           <Link to="/books/new" className="ui button primary olive">
             Add new book
           </Link>
