@@ -5,7 +5,7 @@ WriterBook.destroy_all
 books =[
   {
     title: "Mother; Beautiful Things",
-    image: "/public/images/mother-cover.jpg",
+    image: "https://i.imgur.com/f9n58v3.jpg",
     year: 2017,
     pages: 36,
     price: 5,
@@ -14,7 +14,7 @@ books =[
   },
   {
     title: "Confection",
-    image: "/public/images/confection.jpg",
+    image: "https://i.imgur.com/Sox6bqk.jpg",
     year: 2011,
     pages: 16,
     price: 4,
@@ -23,7 +23,7 @@ books =[
   },
   {
     title: "The Artwar Reader",
-    image: "/public/images/artwar.jpg",
+    image: "https://i.imgur.com/eHtwjcH.jpg",
     year: 2012,
     pages: 16,
     price: 3,
@@ -32,7 +32,7 @@ books =[
   },
   {
     title: "Urgent Film",
-    image: "/public/images/urgent.jpg",
+    image: "https://i.imgur.com/5iJhRrk.jpg",
     year: 2012,
     pages: 12,
     price: 5,
@@ -41,7 +41,7 @@ books =[
   },
   {
     title: "Al-Dente",
-    image: "https://imgur.com/a/xaKlHj5",
+    image: "https://i.imgur.com/R8fgvdC.gifv",
     year: 2014,
     pages: 250,
     price: 6,
@@ -50,7 +50,7 @@ books =[
   },
   {
     title: "Graft and Corruption: Shakespeare’s Sonnet 15",
-    image: "https://i.imgur.com/RhlTdE9.jpg",
+    image: "https://i.imgur.com/QZ5705e.jpg",
     year: 2015,
     pages: 170,
     price: 3,
@@ -59,7 +59,7 @@ books =[
   },
   {
     title: "The Last Shyness",
-    image: "/public/images/the-last-shyness.jpg",
+    image: "https://i.imgur.com/m26MzTF.jpg",
     year: 2017,
     pages: 32,
     price: 4,
@@ -68,7 +68,7 @@ books =[
   },
   {
     title: "Got On",
-    image: "/public/images/got.jpg",
+    image: "https://i.imgur.com/Lqk1lpF.jpg",
     year: 2011,
     pages: 20,
     price: 5,
@@ -77,7 +77,7 @@ books =[
   },
   {
     title: "Average Cabin",
-    image: "/public/images/average-cabin.jpg",
+    image: "https://i.imgur.com/53k1ON3.jpg",
     year: 2015,
     pages: 250,
     price: 6,
@@ -86,7 +86,7 @@ books =[
   },
   {
     title: "Poems (2012-2017)",
-    image: "/public/images/poems(2012-2017).jpg",
+    image: "https://i.imgur.com/ph1qSUl.jpg",
     year: 2017,
     pages: 144,
     price: 3,
@@ -95,7 +95,7 @@ books =[
   },
   {
     title: "Poems",
-    image: "/public/images/poems.jpg",
+    image: "https://i.imgur.com/hLtux75.jpg",
     year: 2017,
     pages: 28,
     price: 7,
@@ -104,7 +104,7 @@ books =[
   },
   {
     title: "Nine Plays",
-    image: "/public/images/nine-plays.jpg",
+    image: "https://i.imgur.com/9ajLOKl.jpg",
     year: 2014,
     pages: 367,
     price: 7,
@@ -113,7 +113,7 @@ books =[
   },
   {
     title: "Regrets, after Joachim du Bellay and others",
-    image: "/public/images/regrets.jpg",
+    image: "https://i.imgur.com/DOFF9VS.jpg",
     year: 2013,
     pages: 20,
     price: 5,
@@ -122,7 +122,7 @@ books =[
   },
   {
     title: "‘Sonatine’",
-    image: "/public/images/sonatine.jpg",
+    image: "https://i.imgur.com/n43Oh5N.jpg",
     year: 2015,
     pages: 70,
     price: 6.50,
@@ -131,7 +131,7 @@ books =[
   },
   {
     title: "Acrobat",
-    image: "/public/images/arcobat.jpg",
+    image: "https://i.imgur.com/AFmPvTH.jpg",
     year: 2012,
     pages: 16,
     price: 5,
@@ -140,7 +140,7 @@ books =[
   },
   {
     title: "Nettle Range Bladefear",
-    image: "/public/images/nettles.jpg",
+    image: "https://i.imgur.com/0RdwiXT.jpg",
     year: 2009,
     pages: 20,
     price: 4,
@@ -149,7 +149,7 @@ books =[
   },
   {
     title: "Team You",
-    image: "/public/images/team.jpg",
+    image: "https://i.imgur.com/ShKyh8t.jpg",
     year: 2012,
     pages: 24,
     price: 5,

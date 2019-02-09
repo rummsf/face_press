@@ -1,18 +1,18 @@
 import React from "react";
 
 class HomePage extends React.Component {
-  // renderNewBooks(props) {
-  //   return props.books
-  //     .filter(book => book.year === "2017")
-  //     .map(book => {
-  //       return (
-  //         <div>
-  //           {book.title}
-  //           {book.image}
-  //         </div>
-  //       );
-  //     });
-  // }
+  renderNewBooks = props => {
+    return props.books
+      .filter(book => book.year === "2017")
+      .map(book => {
+        return (
+          <div>
+            {book.title}
+            {book.image}
+          </div>
+        );
+      });
+  };
 
   render() {
     return (

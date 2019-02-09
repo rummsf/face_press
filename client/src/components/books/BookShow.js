@@ -12,7 +12,7 @@ class BookShow extends React.Component {
       return <div>Hang on </div>;
     }
 
-    const { title, description, pages, price, image } = this.props.book;
+    const { title, description, pages, price, image, year } = this.props.book;
     return (
       <div>
         <h1>{title}</h1>
@@ -21,6 +21,7 @@ class BookShow extends React.Component {
         </div>
         <h4>{description}</h4>
         <h5>{pages} pages</h5>
+        <h5>{year}</h5>
         <h5>£{price}</h5>
       </div>
     );
