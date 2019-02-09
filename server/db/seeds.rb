@@ -170,38 +170,38 @@ writers = [
   },
   {
     name: "Cassels, Imogen",
-    biography: "PhD student",
+    biography: "poetry &c -- noli me tangere -- shabby not chic. phd-in-progress on dylan thomas @caiuscollege. lyricritic someday",
     image: "https://i.imgur.com/o2RbsjR.jpg",
     url: "https://www.english.cam.ac.uk/people/graduates/Imogen.Cassels"
   },
   {
     name: "Dobran, Ryan",
-    biography: "Content Manager",
+    biography: "Ryan: I live in Philadelphia. When not working, I write poems and think about how to write them, often accompanied by fragmentary critical prose.",
     image: "https://i.imgur.com/UMMeVbL.jpg",
     url: "https://ryandobran.com/"
   },
   {
     name: "Keen, Jeff",
-    biography: "",
+    biography: "(1923–2012) was born in Trowbridge, Wiltshire. After being drafted into National Service during WWII, he studied for a short time at Chelsea School of Art and Design, after which he moved to Brighton (UK) where he lived and worked until his death.",
     image: "https://i.imgur.com/IyolBXS.jpg",
     url: "http://www.jeffkeen.co.uk/"
   },
   {
     name: "Prynne, J.H.",
-    biography: "",
+    biography: "Born in 1936 and a leading late modernist poet. He was a key contributor to The English Intelligencer - a series of circulated works between poets based in Cambridge. He is the author of several collections of poetry and of books of critical and academic prose, including works on Saussure, Wordsworth and Shakespeare. He has also written poetry in classical Chinese under the name Pu Ling-en.",
     image: "https://i.imgur.com/i8gnyCY.png",
     url: "https://specialcollections-blog.lib.cam.ac.uk/?p=16166"
   },
   {
     name: "Raworth, Tom",
-    biography: "",
+    biography: "Tom Raworth was born and grew up in London. During the 1970s he travelled and worked in the USA and Mexico, returning to England in 1977 to be Resident Poet at King's College, Cambridge, in which city he still lived at the time of his death, aged 82, in April 2017.",
     image: "https://i.imgur.com/nSnEI53.jpg",
     url: "https://www.poetryfoundation.org/poets/tom-raworth"
   },
  
   {
     name: "Sogumi, Oki",
-    biography: "",
+    biography: "Oki Sogumi is a writer who lives in Philadelphia. She is interested in rebellion, speculation, waywardness, politics of care, and will talk for way too long about their favorite kdrama or weird new life habit. okisogumi.tumblr.com",
     image: "https://i.imgur.com/RMNDmJB.jpg",
     url: "https://www.poetryproject.org/people/oki-sogumi/"
   },
@@ -220,19 +220,19 @@ writers = [
   },
   {
     name: "Tiplady, Jonty",
-    biography: "",
+    biography: "Heaven and earth are heartless/ but nothing ever happens to me/ except that I love you",
     image: "https://i.imgur.com/m94DYfZ.jpg",
     url: "https://bebrowed.wordpress.com/2012/02/04/interview-with-jonty-tiplady-pt-1/"
   },
   {
     name: "Toal, Jefferson",
-    biography: "Children's bookseller",
+    biography: "Children's bookseller, writer and teacher",
     image: "https://i.imgur.com/ljZc1M8.jpg",
     url: "https://mattressofenthusiasm.com/"
   },
   {
     name: "Wallace-Hadrill, Mike",
-    biography: "",
+    biography: "Actor and poet",
     image: "https://i.imgur.com/4sZolBO.jpg", 
     url: "https://www.youtube.com/watch?v=BriqHOdTCtI"
   }

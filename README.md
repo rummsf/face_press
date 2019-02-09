@@ -18,3 +18,4 @@ Features under development:
 - View multiple authors of a single book.
 - Home page with dynamic rendering of most recent publications.
 - Add PayPal links for purchases.
+- Clean writer names, to remove comma and to appear "forename surname"
