@@ -1,4 +1,4 @@
-# face_press_app
+# face_press
 
 React-Redux frontend with Rails backend
 

@@ -41,7 +41,7 @@ class WriterList extends React.Component {
             <div>
               <img src={writer.image} alt="nearly" className="img-responsive" />
             </div>
-            <div>{writer.writer_book}</div>
+            <div>{writer.book}</div>
           </div>
         </div>
       );
