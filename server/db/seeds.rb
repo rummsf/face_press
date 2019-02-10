@@ -5,7 +5,7 @@ WriterBook.destroy_all
 books =[
   {
     title: "Mother; Beautiful Things",
-    image: "https://i.imgur.com/f9n58v3.jpg",
+    image: "https://i.imgur.com/f9n58v3m.jpg",
     year: 2017,
     pages: 36,
     price: 5,
@@ -14,7 +14,7 @@ books =[
   },
   {
     title: "Confection",
-    image: "https://i.imgur.com/Sox6bqk.jpg",
+    image: "https://i.imgur.com/Sox6bqkm.jpg",
     year: 2011,
     pages: 16,
     price: 4,
@@ -23,7 +23,7 @@ books =[
   },
   {
     title: "The Artwar Reader",
-    image: "https://i.imgur.com/eHtwjcH.jpg",
+    image: "https://i.imgur.com/eHtwjcHm.jpg",
     year: 2012,
     pages: 16,
     price: 3,
@@ -32,7 +32,7 @@ books =[
   },
   {
     title: "Urgent Film",
-    image: "https://i.imgur.com/5iJhRrk.jpg",
+    image: "https://i.imgur.com/5iJhRrkm.jpg",
     year: 2012,
     pages: 12,
     price: 5,
@@ -41,7 +41,7 @@ books =[
   },
   {
     title: "Al-Dente",
-    image: "https://i.imgur.com/R8fgvdC.gif",
+    image: "https://i.imgur.com/R8fgvdCm.gif",
     year: 2014,
     pages: 250,
     price: 6,
@@ -50,7 +50,7 @@ books =[
   },
   {
     title: "Graft and Corruption: Shakespeare’s Sonnet 15",
-    image: "https://i.imgur.com/QZ5705e.jpg",
+    image: "https://i.imgur.com/QZ5705em.jpg",
     year: 2015,
     pages: 170,
     price: 3,
@@ -59,7 +59,7 @@ books =[
   },
   {
     title: "The Last Shyness",
-    image: "https://i.imgur.com/m26MzTF.jpg",
+    image: "https://i.imgur.com/m26MzTFm.jpg",
     year: 2017,
     pages: 32,
     price: 4,
@@ -68,7 +68,7 @@ books =[
   },
   {
     title: "Got On",
-    image: "https://i.imgur.com/Lqk1lpF.jpg",
+    image: "https://i.imgur.com/Lqk1lpFm.jpg",
     year: 2011,
     pages: 20,
     price: 5,
@@ -77,7 +77,7 @@ books =[
   },
   {
     title: "Average Cabin",
-    image: "https://i.imgur.com/53k1ON3.jpg",
+    image: "https://i.imgur.com/53k1ON3m.jpg",
     year: 2015,
     pages: 250,
     price: 6,
@@ -86,7 +86,7 @@ books =[
   },
   {
     title: "Poems (2012-2017)",
-    image: "https://i.imgur.com/ph1qSUl.jpg",
+    image: "https://i.imgur.com/ph1qSUlm.jpg",
     year: 2017,
     pages: 144,
     price: 3,
@@ -95,7 +95,7 @@ books =[
   },
   {
     title: "Poems",
-    image: "https://i.imgur.com/hLtux75.jpg",
+    image: "https://i.imgur.com/hLtux75m.jpg",
     year: 2017,
     pages: 28,
     price: 7,
@@ -104,7 +104,7 @@ books =[
   },
   {
     title: "Nine Plays",
-    image: "https://i.imgur.com/9ajLOKl.jpg",
+    image: "https://i.imgur.com/9ajLOKlm.jpg",
     year: 2014,
     pages: 367,
     price: 7,
@@ -113,7 +113,7 @@ books =[
   },
   {
     title: "Regrets, after Joachim du Bellay and others",
-    image: "https://i.imgur.com/DOFF9VS.jpg",
+    image: "https://i.imgur.com/DOFF9VSm.jpg",
     year: 2013,
     pages: 20,
     price: 5,
@@ -122,7 +122,7 @@ books =[
   },
   {
     title: "‘Sonatine’",
-    image: "https://i.imgur.com/n43Oh5N.jpg",
+    image: "https://i.imgur.com/n43Oh5Nm.jpg",
     year: 2015,
     pages: 70,
     price: 6.50,
@@ -130,8 +130,8 @@ books =[
     description: "Large folded broadside. Risograph printed. Edition of c. 70 copies."
   },
   {
-    title: "Acrobat",
-    image: "https://i.imgur.com/AFmPvTH.jpg",
+    title: "Arcobat",
+    image: "https://i.imgur.com/AFmPvTHm.jpg",
     year: 2012,
     pages: 16,
     price: 5,
@@ -140,7 +140,7 @@ books =[
   },
   {
     title: "Nettle Range Bladefear",
-    image: "https://i.imgur.com/0RdwiXT.jpg",
+    image: "https://i.imgur.com/0RdwiXTm.jpg",
     year: 2009,
     pages: 20,
     price: 4,
@@ -149,12 +149,21 @@ books =[
   },
   {
     title: "Team You",
-    image: "https://i.imgur.com/ShKyh8t.jpg",
+    image: "https://i.imgur.com/ShKyh8tm.jpg",
     year: 2012,
     pages: 24,
     price: 5,
     availability: 0,
     description: "Edition of 200 copies"
+  },
+  {
+    title: "Nectar Feed",
+    image: "https://i.imgur.com/FLDWeE5m.gif",
+    year: 2018,
+    pages: 21,
+    price: 12,
+    availability: 60,
+    description: "A series of twenty one broadsides, printed in full colour on laid paper, housed in a bright yellow, board-backed, rubber stamped envelope.  A collaboration between Tender Buttons and Face Press, printed in Cambridge, June 2018, to coincide with the Polyphonic Poetry Festival at Kettle's Yard and the Judith E. Wilson Drama Studio.  Edition of 150 copies, of which 60 are available for sale."
   }
 ] 
 
@@ -171,69 +180,69 @@ writers = [
   {
     name: "Cassels, Imogen",
     biography: "poetry &c -- noli me tangere -- shabby not chic. phd-in-progress on dylan thomas @caiuscollege. lyricritic someday",
-    image: "https://i.imgur.com/o2RbsjR.jpg",
+    image: "https://i.imgur.com/o2RbsjRm.jpg",
     url: "https://www.english.cam.ac.uk/people/graduates/Imogen.Cassels"
   },
   {
     name: "Dobran, Ryan",
     biography: "Ryan: I live in Philadelphia. When not working, I write poems and think about how to write them, often accompanied by fragmentary critical prose.",
-    image: "https://i.imgur.com/UMMeVbL.jpg",
+    image: "https://i.imgur.com/UMMeVbLm.jpg",
     url: "https://ryandobran.com/"
   },
   {
     name: "Keen, Jeff",
     biography: "(1923–2012) was born in Trowbridge, Wiltshire. After being drafted into National Service during WWII, he studied for a short time at Chelsea School of Art and Design, after which he moved to Brighton (UK) where he lived and worked until his death.",
-    image: "https://i.imgur.com/IyolBXS.jpg",
+    image: "https://i.imgur.com/IyolBXSm.jpg",
     url: "http://www.jeffkeen.co.uk/"
   },
   {
     name: "Prynne, J.H.",
     biography: "Born in 1936 and a leading late modernist poet. He was a key contributor to The English Intelligencer - a series of circulated works between poets based in Cambridge. He is the author of several collections of poetry and of books of critical and academic prose, including works on Saussure, Wordsworth and Shakespeare. He has also written poetry in classical Chinese under the name Pu Ling-en.",
-    image: "https://i.imgur.com/i8gnyCY.png",
+    image: "https://i.imgur.com/i8gnyCYm.png",
     url: "https://specialcollections-blog.lib.cam.ac.uk/?p=16166"
   },
   {
     name: "Raworth, Tom",
     biography: "Tom Raworth was born and grew up in London. During the 1970s he travelled and worked in the USA and Mexico, returning to England in 1977 to be Resident Poet at King's College, Cambridge, in which city he still lived at the time of his death, aged 82, in April 2017.",
-    image: "https://i.imgur.com/nSnEI53.jpg",
+    image: "https://i.imgur.com/nSnEI53m.jpg",
     url: "https://www.poetryfoundation.org/poets/tom-raworth"
   },
  
   {
     name: "Sogumi, Oki",
     biography: "Oki Sogumi is a writer who lives in Philadelphia. She is interested in rebellion, speculation, waywardness, politics of care, and will talk for way too long about their favorite kdrama or weird new life habit. okisogumi.tumblr.com",
-    image: "https://i.imgur.com/RMNDmJB.jpg",
+    image: "https://i.imgur.com/RMNDmJBm.jpg",
     url: "https://www.poetryproject.org/people/oki-sogumi/"
   },
   {
     name: "Stuart, Will",
     biography: "Theatre writer and poet",
-    image: "https://i.imgur.com/xnZNTgF.jpg",
+    image: "https://i.imgur.com/xnZNTgFm.jpg",
     url: "https://www.camdram.net/shows/2010-william-fergus-stuart"
   },
  
   {
     name: "Thornton, Timothy",
     biography: "Based in Brighton.  Likes to write about ghosts, foxes, cities + the sea.",
-    image: "https://i.imgur.com/s6UgcK3.jpg",
+    image: "https://i.imgur.com/s6UgcK3m.jpg",
     url: "http://www.timothythornton.co.uk"
   },
   {
     name: "Tiplady, Jonty",
     biography: "Heaven and earth are heartless/ but nothing ever happens to me/ except that I love you",
-    image: "https://i.imgur.com/m94DYfZ.jpg",
+    image: "https://i.imgur.com/m94DYfZm.jpg",
     url: "https://bebrowed.wordpress.com/2012/02/04/interview-with-jonty-tiplady-pt-1/"
   },
   {
     name: "Toal, Jefferson",
     biography: "Children's bookseller, writer and teacher",
-    image: "https://i.imgur.com/ljZc1M8.jpg",
+    image: "https://i.imgur.com/ljZc1M8m.jpg",
     url: "https://mattressofenthusiasm.com/"
   },
   {
     name: "Wallace-Hadrill, Mike",
     biography: "Actor and poet",
-    image: "https://i.imgur.com/4sZolBO.jpg", 
+    image: "https://i.imgur.com/4sZolBOm.jpg", 
     url: "https://www.youtube.com/watch?v=BriqHOdTCtI"
   }
   
@@ -336,7 +345,19 @@ writer_books = [
   {
     writer_id: 26,
     book_id: 72
-  }
+  },
+  {
+    writer_id:26,
+    book_id: 73
+  },
+    {
+    writer_id:22,
+    book_id: 73
+  },
+    {
+    writer_id:24,
+    book_id: 73
+  },
 ]
 writer_books.each {|writer_book| 
   writer = WriterBook.create(writer_book)

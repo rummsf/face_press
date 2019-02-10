@@ -12,10 +12,11 @@ class WriterShow extends React.Component {
       return <div>Hang on </div>;
     }
 
-    const { name, biography, image, url } = this.props.writer;
+    const { name, biography, image, url, books } = this.props.writer;
     return (
       <div>
-        <h1>{name}</h1>
+        <h3>{name}</h3>
+        <div>{books}</div>
         <div>
           <img src={image} alt="nearly" className="img-responsive" />
         </div>

@@ -35,12 +35,17 @@ class WriterList extends React.Component {
         <div className="item" key={writer.id}>
           {this.renderAdmin(writer)}
           <div className="content">
+            <h4>{writer.name}</h4>
             <Link to={`/writers/${writer.id}`} className="header">
-              {writer.name}
+              <div>
+                <img
+                  src={writer.image}
+                  alt="nearly"
+                  className="img-responsive"
+                />
+              </div>
             </Link>
-            <div>
-              <img src={writer.image} alt="nearly" className="img-responsive" />
-            </div>
+
             <div>{writer.book}</div>
           </div>
         </div>

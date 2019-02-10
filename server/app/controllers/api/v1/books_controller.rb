@@ -6,6 +6,6 @@ class Api::V1::BooksController < ApplicationController
 
     def show 
         @book = Book.all.find_by(id:params[:id])
-        render json: @book
+        render json: @books
     end 
 end

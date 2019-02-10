@@ -1,9 +1,8 @@
 import React from "react";
-// import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import GoogleAuth from "./GoogleAuth";
+// import Filter from "./Filter";
 import image from "../images/face-press-banner.jpg";
-// import { updateFilter } from "../actions/index";
 
 class Header extends React.Component {
   render() {
@@ -14,34 +13,26 @@ class Header extends React.Component {
             <h1>@_@</h1>
           </Link>
         </div>
+        <img src={image} alt="almost" />
         <div className="ui secondary pointing menu">
           <Link to="/writers" className="item">
-            All Writers
+            <h5>All Writers</h5>
           </Link>
-          <img src={image} alt="almost" />
-          <hr />
 
           <div className="right menu">
             <Link to="/books" className="item">
-              All Books
+              <h5>All Books</h5>
+            </Link>
+            <Link to="/books/new" className="item">
+              <h5>Recommend a Book</h5>
             </Link>
             <GoogleAuth />
+            {/* <Filter /> */}
           </div>
         </div>
       </>
     );
   }
 }
-
-// const mapStateToProps = state => {
-//   return {
-//     filter: state.filter
-//   };
-// };
-
-// export default connect(
-//   mapStateToProps,
-//   { updateFilter }
-// )(Header);
 
 export default Header;

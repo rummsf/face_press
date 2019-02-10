@@ -12,13 +12,22 @@ class BookShow extends React.Component {
       return <div>Hang on </div>;
     }
 
-    const { title, description, pages, price, image, year } = this.props.book;
+    const {
+      title,
+      writer,
+      description,
+      pages,
+      price,
+      image,
+      year
+    } = this.props.book;
     return (
       <div>
-        <h1>{title}</h1>
+        <h3>{title}</h3>
         <div>
           <img src={image} alt="nearly" className="img-responsive" />
         </div>
+        <h4>{writer}</h4>
         <h4>{description}</h4>
         <h5>{pages} pages</h5>
         <h5>{year}</h5>

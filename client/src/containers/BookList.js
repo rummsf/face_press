@@ -1,8 +1,8 @@
 import React from "react";
+// import _ from "lodash";
 import { connect } from "react-redux";
 import { fetchBooks } from "../actions/books";
 import { Link } from "react-router-dom";
-import HomePage from "../components/HomePage";
 
 class BookList extends React.Component {
   componentDidMount() {
@@ -33,13 +33,14 @@ class BookList extends React.Component {
         <div className="item" key={book.id}>
           {this.renderAdmin(book)}
           <div className="content">
+            <h4>{book.title}</h4>
             <Link to={`/books/${book.id}`} className="header">
-              {book.title}
+              <div>
+                <img src={book.image} alt="nearly" className="img-responsive" />
+              </div>
             </Link>
-            <div>
-              <img src={book.image} alt="nearly" className="img-responsive" />
-            </div>
-            <div>{book.writer_book}</div>
+
+            {/* <div>{book.writers.map(writer => writer.name}</div> */}
             <div style={{ textAlign: "right" }} />
           </div>
         </div>
@@ -67,7 +68,6 @@ class BookList extends React.Component {
           <div>{this.renderList()}</div>
           {this.renderCreate()}
         </div>
-        <HomePage books={this.props.books} />
       </div>
     );
   }
