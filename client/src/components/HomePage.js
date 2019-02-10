@@ -9,18 +9,18 @@ class HomePage extends React.Component {
 
   renderNewBooks() {
     console.log(this.props);
-    return (
-      this.props.books
-        // .filter(book => book.year === "2017")
-        .map(book => {
-          return (
-            <div>
-              {book.title}
-              {book.image}
-            </div>
-          );
-        })
-    );
+    return this.props.books
+      .filter(book => book.year === 2017 || book.year === 2018)
+      .map(book => {
+        return (
+          <div>
+            {book.title}
+            <br />
+
+            <img src={book.image} alt="nearly" />
+          </div>
+        );
+      });
   }
 
   render() {
