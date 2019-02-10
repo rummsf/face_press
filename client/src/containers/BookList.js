@@ -3,6 +3,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchBooks } from "../actions/books";
 import { Link } from "react-router-dom";
+import "./ItemList.css";
 
 class BookList extends React.Component {
   componentDidMount() {
@@ -30,16 +31,15 @@ class BookList extends React.Component {
   renderList() {
     return this.props.books.map(book => {
       return (
-        <div className="item" key={book.id}>
+        <div className="book-list" key={book.id}>
           {this.renderAdmin(book)}
-          <div className="content">
+          <div className="book-list">
             <h4>{book.title}</h4>
             <Link to={`/books/${book.id}`} className="header">
               <div>
                 <img src={book.image} alt="nearly" className="img-responsive" />
               </div>
             </Link>
-
             {/* <div>{book.writers.map(writer => writer.name}</div> */}
             <div style={{ textAlign: "right" }} />
           </div>
@@ -64,8 +64,8 @@ class BookList extends React.Component {
     return (
       <div>
         <h2>Books</h2>
-        <div className="ui celled relaxed list">
-          <div>{this.renderList()}</div>
+        <div className="book-list">
+          <div className="item-list">{this.renderList()}</div>
           {this.renderCreate()}
         </div>
       </div>

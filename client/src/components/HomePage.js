@@ -14,7 +14,11 @@ class HomePage extends React.Component {
       .filter(book => book.year === 2017 || book.year === 2018)
       .map(book => {
         return (
-          <div className="item" key={book.id}>
+          <div
+            className="item"
+            key={book.id}
+            // style="display:grid"
+          >
             {book.title}
             <br />
             <img src={book.image} alt="nearly" />

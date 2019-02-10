@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchWriters } from "../actions/writers";
 import { Link } from "react-router-dom";
+import "./ItemList.css";
 
 class WriterList extends React.Component {
   componentDidMount() {
@@ -69,7 +70,7 @@ class WriterList extends React.Component {
     return (
       <div>
         <h2>Writers</h2>
-        <div className="ui celled relaxed list">{this.renderList()}</div>
+        <div className="item-list">{this.renderList()}</div>
         {this.renderCreate()}
       </div>
     );
