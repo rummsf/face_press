@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { fetchBooks } from "../actions/books";
+// import BookList from "../containers/BookList";
 
 class HomePage extends React.Component {
   componentDidMount() {
@@ -13,10 +14,9 @@ class HomePage extends React.Component {
       .filter(book => book.year === 2017 || book.year === 2018)
       .map(book => {
         return (
-          <div>
+          <div className="item" key={book.id}>
             {book.title}
             <br />
-
             <img src={book.image} alt="nearly" />
           </div>
         );
@@ -30,6 +30,8 @@ class HomePage extends React.Component {
       <div>
         <h1>Some new books</h1>
         {this.renderNewBooks(books)}
+
+        {/* <BookList books={books} /> */}
       </div>
     );
   }

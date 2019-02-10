@@ -43,7 +43,7 @@ class BookForm extends React.Component {
           component={this.renderInput}
           label="Number of pages:"
         />
-        <Field name="price" component={this.renderInput} label="Price:" />
+        <Field name="thoughts" component={this.renderInput} label="Thoughts:" />
         <button className="ui button primary">Submit</button>
       </form>
     );
@@ -60,7 +60,7 @@ const validate = formValues => {
     errors.description = "A new book needs a description";
   }
   if (!formValues.price) {
-    errors.price = "A new book needs a price";
+    errors.thoughts = "We would like to know your thoughts";
   }
   return errors;
 };

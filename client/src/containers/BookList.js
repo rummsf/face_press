@@ -85,3 +85,16 @@ export default connect(
   mapStateToProps,
   { fetchBooks }
 )(BookList);
+
+// const mapStateToProps = state => {
+//   return {
+//     books: Object.values(state.books),
+//     currentUserId: state.auth.userId,
+//     isSignedIn: state.auth.isSignedIn
+//   };
+// };
+
+// export default connect(
+//   mapStateToProps,
+//   null
+// )(BookList);
