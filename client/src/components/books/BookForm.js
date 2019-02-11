@@ -28,11 +28,23 @@ class BookForm extends React.Component {
 
   render() {
     return (
+      // title: "Arcobat",
+      // poet: "Jefferson Toal",
+      // image: "https://i.imgur.com/AFmPvTHm.jpg",
+      // year: 2012,
+      // pages: 16,
+      // price: 5,
+      // availability: 0,
+      // description: "Edition of 200 copies",
+      // publisher: "",
+      // review: "",
+      // contributor: ""
       <form
         onSubmit={this.props.handleSubmit(this.onSubmit)}
         className="ui form error"
       >
         <Field name="title" component={this.renderInput} label="Title:" />
+        <Field name="poet" component={this.renderInput} label="Poet:" />
         <Field
           name="description"
           component={this.renderInput}

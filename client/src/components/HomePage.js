@@ -10,7 +10,6 @@ class HomePage extends React.Component {
   }
 
   renderNewBooks() {
-    console.log(this.props);
     return this.props.books
       .filter(book => book.year === 2017 || book.year === 2018)
       .map(book => {

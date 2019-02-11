@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { createBook } from "../../actions";
+import { createBook } from "../../actions/books";
 import BookForm from "./BookForm";
 
 class BookCreate extends React.Component {

@@ -8,12 +8,12 @@ class Header extends React.Component {
   render() {
     return (
       <>
-        <div className="center aligned">
+        <div className="ui center aligned segment">
           <Link to="/" className="item">
             <h1>@_@</h1>
           </Link>
+          <img src={image} alt="almost" className="ui centered image" />
         </div>
-        <img src={image} alt="almost" />
         <div className="ui secondary pointing menu">
           <Link to="/writers" className="item">
             <h5>All Writers</h5>
