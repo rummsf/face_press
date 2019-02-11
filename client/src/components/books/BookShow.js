@@ -14,22 +14,29 @@ class BookShow extends React.Component {
 
     const {
       title,
-      writer,
+      poet,
       description,
       pages,
       price,
       image,
-      year
+      year,
+      review,
+      contributor,
+      publisher
     } = this.props.book;
     return (
       <div>
         <h3>{title}</h3>
+        by
+        <h4>{poet}</h4>
         <div>
           <img src={image} alt="nearly" className="img-responsive" />
         </div>
-        <h4>{writer}</h4>
         <h4>{description}</h4>
+        <h5>{review}</h5>
+        <h5>{publisher}</h5>
         <h5>{pages} pages</h5>
+        <h5>{contributor}</h5>
         <h5>{year}</h5>
         <h5>£{price}</h5>
       </div>

@@ -31,16 +31,17 @@ class BookList extends React.Component {
   renderList() {
     return this.props.books.map(book => {
       return (
-        <div className="book-list" key={book.id}>
+        <div className="item" key={book.id}>
           {this.renderAdmin(book)}
-          <div className="book-list">
-            <h4>{book.title}</h4>
+          <div className="item">
+            <h4>
+              {book.title} by {book.poet}
+            </h4>
             <Link to={`/books/${book.id}`} className="header">
               <div>
                 <img src={book.image} alt="nearly" className="img-responsive" />
               </div>
             </Link>
-            {/* <div>{book.writers.map(writer => writer.name}</div> */}
             <div style={{ textAlign: "right" }} />
           </div>
         </div>
@@ -53,7 +54,7 @@ class BookList extends React.Component {
       return (
         <div style={{ textAlign: "right" }}>
           <Link to="/books/new" className="ui button primary olive">
-            Add new book
+            Recommend a book
           </Link>
         </div>
       );
@@ -64,9 +65,9 @@ class BookList extends React.Component {
     return (
       <div>
         <h2>Books</h2>
-        <div className="book-list">
+        <div>
           <div className="item-list">{this.renderList()}</div>
-          {this.renderCreate()}
+          <div className="item-list">{this.renderCreate()}</div>
         </div>
       </div>
     );

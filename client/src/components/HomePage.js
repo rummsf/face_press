@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { fetchBooks } from "../actions/books";
+import "../containers/ItemList.css";
 // import BookList from "../containers/BookList";
 
 class HomePage extends React.Component {
@@ -33,8 +34,7 @@ class HomePage extends React.Component {
     return (
       <div>
         <h1>Some new books</h1>
-        {this.renderNewBooks(books)}
-
+        <div className="item-list">{this.renderNewBooks(books)}</div>
         {/* <BookList books={books} /> */}
       </div>
     );

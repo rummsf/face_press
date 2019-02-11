@@ -38,12 +38,15 @@ class BookForm extends React.Component {
           component={this.renderInput}
           label="Description:"
         />
+        <Field name="image" component={this.renderInput} label="Image URL:" />
         <Field
-          name="pages"
+          name="publisher"
           component={this.renderInput}
-          label="Number of pages:"
+          label="Publisher:"
         />
         <Field name="thoughts" component={this.renderInput} label="Thoughts:" />
+        <Field name="user" component={this.renderInput} label="Who are you?" />
+
         <button className="ui button primary">Submit</button>
       </form>
     );
@@ -59,7 +62,7 @@ const validate = formValues => {
   if (!formValues.description) {
     errors.description = "A new book needs a description";
   }
-  if (!formValues.price) {
+  if (!formValues.thoughts) {
     errors.thoughts = "We would like to know your thoughts";
   }
   return errors;

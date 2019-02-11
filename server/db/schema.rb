@@ -14,12 +14,16 @@ ActiveRecord::Schema.define(version: 2019_01_11_002129) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
+    t.string "poet"
     t.string "image"
     t.integer "year"
     t.integer "pages"
     t.string "description"
     t.integer "price"
     t.integer "availability"
+    t.string "publisher"
+    t.string "review"
+    t.string "contributor"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

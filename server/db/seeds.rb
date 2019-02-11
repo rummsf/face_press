@@ -5,165 +5,238 @@ WriterBook.destroy_all
 books =[
   {
     title: "Mother; Beautiful Things",
+    poet: "Imogen Cassels",
     image: "https://i.imgur.com/f9n58v3m.jpg",
     year: 2017,
     pages: 36,
     price: 5,
     availability: 44,
-    description: "Saddle stitched into black card wrappers, in sparkly integral dust jacket; azure endpapers.  Digitally printed in black, blue, and red throughout."
+    description: "Saddle stitched into black card wrappers, in sparkly integral dust jacket; azure endpapers.  Digitally printed in black, blue, and red throughout.",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Confection",
+    poet: "Ryan Dobran",
     image: "https://i.imgur.com/Sox6bqkm.jpg",
     year: 2011,
     pages: 16,
     price: 4,
     availability: 0,
-    description: "Cover art by Raul Perdomo.  Edition of 200 copies."
+    description: "Cover art by Raul Perdomo.  Edition of 200 copies.",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "The Artwar Reader",
+    poet: "Jeff Keen",
     image: "https://i.imgur.com/eHtwjcHm.jpg",
     year: 2012,
     pages: 16,
     price: 3,
     availability: 10,
-    description: "A facsimile reprint of the first edition.  Edition of 300 copies."
+    description: "A facsimile reprint of the first edition.  Edition of 300 copies.",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Urgent Film",
+    poet: "Jeff Keen",
     image: "https://i.imgur.com/5iJhRrkm.jpg",
     year: 2012,
     pages: 12,
     price: 5,
     availability: 0,
-    description: "A facsimile reprint of the first edition.  Available in eight colours (red, orange, yellow, green, blue, purple, violet, pink).  Edition of 300 copies."
+    description: "A facsimile reprint of the first edition.  Available in eight colours (red, orange, yellow, green, blue, purple, violet, pink).  Edition of 300 copies.",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Al-Dente",
+    poet: "J.H. Prynne",
     image: "https://i.imgur.com/R8fgvdCm.gif",
     year: 2014,
     pages: 250,
     price: 6,
     availability: 0,
-    description: "8 poems"
+    description: "8 poems",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Graft and Corruption: Shakespeare’s Sonnet 15",
+    poet: "J.H. Prynne",
     image: "https://i.imgur.com/QZ5705em.jpg",
     year: 2015,
     pages: 170,
     price: 3,
     availability: 0,
-    description: ""
+    description: "",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "The Last Shyness",
+    poet: "Ryan Dobran",
     image: "https://i.imgur.com/m26MzTFm.jpg",
     year: 2017,
     pages: 32,
     price: 4,
     availability: 0,
-    description: "Saddle stitched into letterpressed wrappers; scarlet endpapers.  Risograph printed in black and yellow."
+    description: "Saddle stitched into letterpressed wrappers; scarlet endpapers.  Risograph printed in black and yellow.",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Got On",
+    poet: "Tom Raworth",
     image: "https://i.imgur.com/Lqk1lpFm.jpg",
     year: 2011,
     pages: 20,
     price: 5,
     availability: 0,
-    description: "Letterpress. Colour endpapers by the author. Cover art by Travis Frazelle (in two styles). Edition of 200 copies."
+    description: "Letterpress. Colour endpapers by the author. Cover art by Travis Frazelle (in two styles). Edition of 200 copies.",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Average Cabin",
+    poet: "Tom Raworth",
     image: "https://i.imgur.com/53k1ON3m.jpg",
     year: 2015,
     pages: 250,
     price: 6,
     availability: 0,
-    description: "Covers and endpapers in various colour combinations.  Edition of 250 copies"
+    description: "Covers and endpapers in various colour combinations.  Edition of 250 copies",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Poems (2012-2017)",
+    poet: "Oki Sogumi",
     image: "https://i.imgur.com/ph1qSUlm.jpg",
     year: 2017,
     pages: 144,
     price: 3,
     availability: 0,
-    description: "Perfect bound, in dust jacket.  Letterpressed spine label."
+    description: "Perfect bound, in dust jacket.  Letterpressed spine label.",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Poems",
+    poet: "Timothy Thornton",
     image: "https://i.imgur.com/hLtux75m.jpg",
     year: 2017,
     pages: 28,
     price: 7,
     availability: 0,
-    description: "Covers letterpressed in silver ink."
+    description: "Covers letterpressed in silver ink.",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Nine Plays",
+    poet: "William Stuart",
     image: "https://i.imgur.com/9ajLOKlm.jpg",
     year: 2014,
     pages: 367,
     price: 7,
     availability: 0,
-    description: "Edited and introduced by Ian Heames.  Afterword by J.H. Prynne.  Hardback in dust jacket."
+    description: "Edited and introduced by Ian Heames.  Afterword by J.H. Prynne.  Hardback in dust jacket.",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Regrets, after Joachim du Bellay and others",
+    poet: "Peter Riley",
     image: "https://i.imgur.com/DOFF9VSm.jpg",
     year: 2013,
     pages: 20,
     price: 5,
     availability: 0,
-    description: "Versions of poems by du Bellay, de Sponde, and Machado.  Hand-sewn booklet"
+    description: "Versions of poems by du Bellay, de Sponde, and Machado.  Hand-sewn booklet",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "‘Sonatine’",
+    poet: "Jonty Tiplady",
     image: "https://i.imgur.com/n43Oh5Nm.jpg",
     year: 2015,
     pages: 70,
     price: 6.50,
     availability: 0,
-    description: "Large folded broadside. Risograph printed. Edition of c. 70 copies."
+    description: "Large folded broadside. Risograph printed. Edition of c. 70 copies.",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Arcobat",
+    poet: "Jefferson Toal",
     image: "https://i.imgur.com/AFmPvTHm.jpg",
     year: 2012,
     pages: 16,
     price: 5,
     availability: 0,
-    description: "Edition of 200 copies"
+    description: "Edition of 200 copies",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Nettle Range Bladefear",
+    poet: "Wallace-Hadrill, Mike",
     image: "https://i.imgur.com/0RdwiXTm.jpg",
     year: 2009,
     pages: 20,
     price: 4,
     availability: 0,
-    description: "Letterpress.  Second impression of 140 copies.  [First impression of 60 copies SOLD OUT.]"
+    description: "Letterpress.  Second impression of 140 copies.  [First impression of 60 copies SOLD OUT.]",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Team You",
+    poet: "Wallace-Hadrill, Mike",
     image: "https://i.imgur.com/ShKyh8tm.jpg",
     year: 2012,
     pages: 24,
     price: 5,
     availability: 0,
-    description: "Edition of 200 copies"
+    description: "Edition of 200 copies",
+    publisher:"",
+    review:"",
+    contributor:""
   },
   {
     title: "Nectar Feed",
     image: "https://i.imgur.com/FLDWeE5m.gif",
+    poet: "Janani Ambikapathy",
+    # poets: ["Janani Ambikapathy", "Laynie Browne", "Hannah Ensor and Laura Wetherington", "Amy Evans", "Irum Fazal", "Fanny Howe", "Louise Landes Levi", "Janice A. Lowe", "Eileen Myles", "Gizem Okulu", "Julie Patton", "Nisha Ramayya", "Ariana Reines", "Lisa Robertson", "Sophie Robinson", "Oki Sogumi", "Verity Spott", "Wendy Trevino", "Rosa van Hensbergen", "Naomi Weber"],
     year: 2018,
     pages: 21,
     price: 12,
     availability: 60,
-    description: "A series of twenty one broadsides, printed in full colour on laid paper, housed in a bright yellow, board-backed, rubber stamped envelope.  A collaboration between Tender Buttons and Face Press, printed in Cambridge, June 2018, to coincide with the Polyphonic Poetry Festival at Kettle's Yard and the Judith E. Wilson Drama Studio.  Edition of 150 copies, of which 60 are available for sale."
+    description: "A series of twenty one broadsides, printed in full colour on laid paper, housed in a bright yellow, board-backed, rubber stamped envelope.  A collaboration between Tender Buttons and Face Press, printed in Cambridge, June 2018, to coincide with the Polyphonic Poetry Festival at Kettle's Yard and the Judith E. Wilson Drama Studio.  Edition of 150 copies, of which 60 are available for sale.",
+    publisher:"",
+    review:"",
+    contributor:""
   }
 ] 
 
@@ -171,12 +244,6 @@ books.each {|book| Book.create(book)}
 
 writers = [
 
-  {
-    name: "Anonymous",
-    biography: "",
-    image: "",
-    url: ""
-  },
   {
     name: "Cassels, Imogen",
     biography: "poetry &c -- noli me tangere -- shabby not chic. phd-in-progress on dylan thomas @caiuscollege. lyricritic someday",

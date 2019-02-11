@@ -54,24 +54,11 @@ class WriterList extends React.Component {
     });
   }
 
-  renderCreate() {
-    if (this.props.isSignedIn) {
-      return (
-        <div style={{ textAlign: "right" }}>
-          <Link to="/writers/new" className="ui button primary olive">
-            Add new writer
-          </Link>
-        </div>
-      );
-    }
-  }
-
   render() {
     return (
       <div>
         <h2>Writers</h2>
         <div className="item-list">{this.renderList()}</div>
-        {this.renderCreate()}
       </div>
     );
   }
