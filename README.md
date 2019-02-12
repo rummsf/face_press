@@ -12,11 +12,12 @@ Current functionality:
 - Home page with dynamic rendering of most recent publications.
 - CSS styling.
 - Google Auth sign-in.
-- Log in and recommend a book by adding it to the catalogue, edit book details, delete book.
+- Recommend a book by creating it and adding to the catalogue, with a writer selected from a dropdown menu.
 
 Features under development:
 
 - Access associations between writers and books.
 - View multiple authors of a single book.
+- Edit book details, delete book.
 - Add PayPal links for purchases.
 - Clean writer names, to remove comma and to appear "forename surname"
