@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { createBook } from "../../actions/books";
+import { fetchWriters } from "../../actions";
 import BookForm from "./BookForm";
 
 class BookCreate extends React.Component {
@@ -19,10 +20,10 @@ class BookCreate extends React.Component {
 }
 
 const mapStateToProps = state => {
-  return { writers: state.writers };
+  return { writers: Object.values(state.writers) };
 };
 
 export default connect(
   mapStateToProps,
-  { createBook }
+  { createBook, fetchWriters }
 )(BookCreate);

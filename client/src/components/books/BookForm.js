@@ -44,12 +44,12 @@ class BookForm extends React.Component {
         <Field
           name="writer"
           component={DropdownList}
-          data={this.props.writers}
+          data={this.props.writers.map(writer => writer.name)}
           valueField="value"
           label="Writer:"
         >
           Select a writer we already know:
-          <option>{this.props.writers.map(writer => writer.name)}</option>
+          {/* <option>{this.props.writers.map(writer => writer.name)}</option> */}
           {/* <select value={this.state.value} onChange={this.handleChange}>
             <option value="writer">
               {this.state.writers.map(writer => writer.name)}
@@ -73,7 +73,7 @@ class BookForm extends React.Component {
           component={this.renderInput}
           label="Publisher:"
         />
-        <Field name="thoughts" component={this.renderInput} label="Thoughts:" />
+        <Field name="review" component={this.renderInput} label="Thoughts:" />
         <Field name="user" component={this.renderInput} label="Who are you?" />
         <button className="ui button primary">Submit</button>
       </form>
@@ -90,8 +90,8 @@ const validate = formValues => {
   if (!formValues.description) {
     errors.description = "A new book needs a description";
   }
-  if (!formValues.thoughts) {
-    errors.thoughts = "We would like to know your thoughts";
+  if (!formValues.review) {
+    errors.review = "We would like to know your thoughts";
   }
   return errors;
 };
