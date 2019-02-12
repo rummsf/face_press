@@ -10,6 +10,7 @@ Current functionality:
 - Writer index and show pages, with external links.
 - Display images for books and writers.
 - Home page with dynamic rendering of most recent publications.
+- CSS styling.
 - Google Auth sign-in.
 - Log in and recommend a book by adding it to the catalogue, edit book details, delete book.
 

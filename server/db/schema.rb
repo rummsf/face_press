@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 2019_01_11_002129) do
     t.string "url"
     t.string "image"
     t.string "biography"
+    t.boolean "admin_created"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

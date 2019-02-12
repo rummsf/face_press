@@ -19,8 +19,9 @@ class HomePage extends React.Component {
             key={book.id}
             // style="display:grid"
           >
-            {book.title}
-            <br />
+            <h4>
+              {book.title} by {book.poet}
+            </h4>
             <img src={book.image} alt="nearly" />
           </div>
         );
@@ -32,7 +33,7 @@ class HomePage extends React.Component {
 
     return (
       <div>
-        <h1>Some new books</h1>
+        <h1>Newest books</h1>
         <div className="item-list">{this.renderNewBooks(books)}</div>
         {/* <BookList books={books} /> */}
       </div>

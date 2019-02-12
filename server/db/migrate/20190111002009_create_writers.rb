@@ -5,6 +5,7 @@ class CreateWriters < ActiveRecord::Migration[5.2]
       t.string :url
       t.string :image
       t.string :biography
+      t.boolean :admin_created
 
       t.timestamps
     end

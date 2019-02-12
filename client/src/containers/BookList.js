@@ -34,9 +34,11 @@ class BookList extends React.Component {
         <div className="item" key={book.id}>
           {this.renderAdmin(book)}
           <div className="item">
-            <h4>
-              {book.title} by {book.poet}
-            </h4>
+            <div style={{ textAlign: "center" }}>
+              <h4>
+                {book.title} by {book.poet}
+              </h4>
+            </div>
             <Link to={`/books/${book.id}`} className="header">
               <div>
                 <img src={book.image} alt="nearly" className="img-responsive" />

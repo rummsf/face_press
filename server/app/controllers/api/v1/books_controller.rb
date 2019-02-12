@@ -1,19 +1,30 @@
 class Api::V1::BooksController < ApplicationController
+    skip_before_action :verify_authenticity_token
     def index 
         @books = Book.all 
         render json: @books
     end 
 
     def show 
-        @book = Book.find_by(id:params[:id])
+        @book = Book.find_by(id:book_params[:id])
         render json: @book
     end 
 
     def create
-        binding.pry
-        Book.create(params[:book])
-        render :create, status: :created
+        @book = Book.new(book_params)
+
+        if @book.valid? 
+            @book.save
+        render json: @book
+        end
     end
+
+    private 
+
+    def book_params
+        params.require(:book).permit(:title, :poet, :image, :description, :publisher)
+    end
+
 end
 
 # {book: @book, writer: @book.writer}

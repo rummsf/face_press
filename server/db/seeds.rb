@@ -248,69 +248,80 @@ writers = [
     name: "Cassels, Imogen",
     biography: "poetry &c -- noli me tangere -- shabby not chic. phd-in-progress on dylan thomas @caiuscollege. lyricritic someday",
     image: "https://i.imgur.com/o2RbsjRm.jpg",
-    url: "https://www.english.cam.ac.uk/people/graduates/Imogen.Cassels"
+    url: "https://www.english.cam.ac.uk/people/graduates/Imogen.Cassels",
+    admin_created: true
   },
   {
     name: "Dobran, Ryan",
     biography: "Ryan: I live in Philadelphia. When not working, I write poems and think about how to write them, often accompanied by fragmentary critical prose.",
     image: "https://i.imgur.com/UMMeVbLm.jpg",
-    url: "https://ryandobran.com/"
+    url: "https://ryandobran.com/",
+    admin_created: true
   },
   {
     name: "Keen, Jeff",
     biography: "(1923–2012) was born in Trowbridge, Wiltshire. After being drafted into National Service during WWII, he studied for a short time at Chelsea School of Art and Design, after which he moved to Brighton (UK) where he lived and worked until his death.",
     image: "https://i.imgur.com/IyolBXSm.jpg",
-    url: "http://www.jeffkeen.co.uk/"
+    url: "http://www.jeffkeen.co.uk/",
+    admin_created: true
   },
   {
     name: "Prynne, J.H.",
     biography: "Born in 1936 and a leading late modernist poet. He was a key contributor to The English Intelligencer - a series of circulated works between poets based in Cambridge. He is the author of several collections of poetry and of books of critical and academic prose, including works on Saussure, Wordsworth and Shakespeare. He has also written poetry in classical Chinese under the name Pu Ling-en.",
     image: "https://i.imgur.com/i8gnyCYm.png",
-    url: "https://specialcollections-blog.lib.cam.ac.uk/?p=16166"
+    url: "https://specialcollections-blog.lib.cam.ac.uk/?p=16166",
+    admin_created: true
   },
   {
     name: "Raworth, Tom",
     biography: "Tom Raworth was born and grew up in London. During the 1970s he travelled and worked in the USA and Mexico, returning to England in 1977 to be Resident Poet at King's College, Cambridge, in which city he still lived at the time of his death, aged 82, in April 2017.",
     image: "https://i.imgur.com/nSnEI53m.jpg",
-    url: "https://www.poetryfoundation.org/poets/tom-raworth"
+    url: "https://www.poetryfoundation.org/poets/tom-raworth",
+    admin_created: true
   },
  
   {
     name: "Sogumi, Oki",
     biography: "Oki Sogumi is a writer who lives in Philadelphia. She is interested in rebellion, speculation, waywardness, politics of care, and will talk for way too long about their favorite kdrama or weird new life habit. okisogumi.tumblr.com",
     image: "https://i.imgur.com/RMNDmJBm.jpg",
-    url: "https://www.poetryproject.org/people/oki-sogumi/"
+    url: "https://www.poetryproject.org/people/oki-sogumi/",
+    admin_created: true
   },
   {
     name: "Stuart, Will",
     biography: "Theatre writer and poet",
     image: "https://i.imgur.com/xnZNTgFm.jpg",
-    url: "https://www.camdram.net/shows/2010-william-fergus-stuart"
+    url: "https://www.camdram.net/shows/2010-william-fergus-stuart",
+    admin_created: true
   },
  
   {
     name: "Thornton, Timothy",
     biography: "Based in Brighton.  Likes to write about ghosts, foxes, cities + the sea.",
     image: "https://i.imgur.com/s6UgcK3m.jpg",
-    url: "http://www.timothythornton.co.uk"
+    url: "http://www.timothythornton.co.uk",
+    admin_created: true
   },
   {
     name: "Tiplady, Jonty",
     biography: "Heaven and earth are heartless/ but nothing ever happens to me/ except that I love you",
     image: "https://i.imgur.com/m94DYfZm.jpg",
-    url: "https://bebrowed.wordpress.com/2012/02/04/interview-with-jonty-tiplady-pt-1/"
+    url: "https://bebrowed.wordpress.com/2012/02/04/interview-with-jonty-tiplady-pt-1/",
+    admin_created: true
   },
   {
     name: "Toal, Jefferson",
     biography: "Children's bookseller, writer and teacher",
     image: "https://i.imgur.com/ljZc1M8m.jpg",
-    url: "https://mattressofenthusiasm.com/"
+    url: "https://mattressofenthusiasm.com/",
+    admin_created: true
   },
   {
     name: "Wallace-Hadrill, Mike",
     biography: "Actor and poet",
     image: "https://i.imgur.com/4sZolBOm.jpg", 
-    url: "https://www.youtube.com/watch?v=BriqHOdTCtI"
+    url: "https://www.youtube.com/watch?v=BriqHOdTCtI",
+    admin_created: true
   }
   
 ]

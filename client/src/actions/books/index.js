@@ -25,7 +25,7 @@ export const createBook = formValues => async (dispatch, getState) => {
   const { userId } = getState().auth;
   const response = await books.post("/api/v1/books", {
     ...formValues,
-    userId
+    userId: userId
   });
   dispatch({ type: CREATE_BOOK, payload: response.data });
   history.push("/");

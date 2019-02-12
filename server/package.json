@@ -1,5 +1,7 @@
 {
   "name": "face_press_backend",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "react-dropdown": "^1.6.4"
+  }
 }

@@ -1,5 +1,8 @@
 import React from "react";
+import Dropdown from "react-dropdown";
+import "react-dropdown/style.css";
 import { Field, reduxForm } from "redux-form";
+import { FETCH_WRITERS } from "../../actions/types";
 
 class BookForm extends React.Component {
   renderError({ error, touched }) {
@@ -28,14 +31,10 @@ class BookForm extends React.Component {
 
   render() {
     return (
-      // title: "Arcobat",
-      // poet: "Jefferson Toal",
-      // image: "https://i.imgur.com/AFmPvTHm.jpg",
       // year: 2012,
       // pages: 16,
       // price: 5,
       // availability: 0,
-      // description: "Edition of 200 copies",
       // publisher: "",
       // review: "",
       // contributor: ""
@@ -44,7 +43,17 @@ class BookForm extends React.Component {
         className="ui form error"
       >
         <Field name="title" component={this.renderInput} label="Title:" />
-        <Field name="poet" component={this.renderInput} label="Poet:" />
+
+        <Field name="writer" component={this.renderInput} label="Writer:">
+          Select a writer we already know:
+          {/* <select value={this.state.value} onChange={this.handleChange}>
+            <option value="writer">
+              {this.state.writers.map(writer => writer.name)}
+            </option>
+          </select> */}
+          <Dropdown className="writer" />
+        </Field>
+
         <Field
           name="description"
           component={this.renderInput}
