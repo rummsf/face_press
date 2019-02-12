@@ -12,13 +12,17 @@ class BookCreate extends React.Component {
     return (
       <div>
         <h3>Recommend us a book</h3>
-        <BookForm onSubmit={this.onSubmit} />
+        <BookForm onSubmit={this.onSubmit} writers={this.props.writers} />
       </div>
     );
   }
 }
 
+const mapStateToProps = state => {
+  return { writers: state.writers };
+};
+
 export default connect(
-  null,
+  mapStateToProps,
   { createBook }
 )(BookCreate);

@@ -1,8 +1,10 @@
 import React from "react";
-import Dropdown from "react-dropdown";
-import "react-dropdown/style.css";
+import { DropdownList } from "react-widgets";
+// import Multiselect from "react-widgets/lib/Multiselect";
+import "react-widgets/dist/css/react-widgets.css";
+// import Dropdown from "react-dropdown";
+// import "react-dropdown/style.css";
 import { Field, reduxForm } from "redux-form";
-import { FETCH_WRITERS } from "../../actions/types";
 
 class BookForm extends React.Component {
   renderError({ error, touched }) {
@@ -30,30 +32,36 @@ class BookForm extends React.Component {
   };
 
   render() {
+    // const defaultOption = options[0];
     return (
-      // year: 2012,
-      // pages: 16,
-      // price: 5,
-      // availability: 0,
-      // publisher: "",
-      // review: "",
-      // contributor: ""
       <form
         onSubmit={this.props.handleSubmit(this.onSubmit)}
         className="ui form error"
       >
         <Field name="title" component={this.renderInput} label="Title:" />
+        {/* <Field name="writer" component={this.renderInput} label="Writer:"> */}
 
-        <Field name="writer" component={this.renderInput} label="Writer:">
+        <Field
+          name="writer"
+          component={DropdownList}
+          data={this.props.writers}
+          valueField="value"
+          label="Writer:"
+        >
           Select a writer we already know:
+          <option>{this.props.writers.map(writer => writer.name)}</option>
           {/* <select value={this.state.value} onChange={this.handleChange}>
             <option value="writer">
               {this.state.writers.map(writer => writer.name)}
             </option>
           </select> */}
-          <Dropdown className="writer" />
+          {/* <Dropdown className="writer"
+            options={options}
+            onChange={this._onSelect}
+            value={defaultOption}
+            placeholder="Choose a writer"
+          /> */}
         </Field>
-
         <Field
           name="description"
           component={this.renderInput}
@@ -67,7 +75,6 @@ class BookForm extends React.Component {
         />
         <Field name="thoughts" component={this.renderInput} label="Thoughts:" />
         <Field name="user" component={this.renderInput} label="Who are you?" />
-
         <button className="ui button primary">Submit</button>
       </form>
     );

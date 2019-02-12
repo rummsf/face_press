@@ -12,6 +12,7 @@ class Api::V1::BooksController < ApplicationController
 
     def create
         @book = Book.new(book_params)
+            @writer = Writer.new(book_params.)
 
         if @book.valid? 
             @book.save

@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchWriters } from "../actions/writers";
 import { Link } from "react-router-dom";
+import BookForm from "../components/books/BookForm";
 import "./ItemList.css";
 
 class WriterList extends React.Component {
@@ -54,14 +55,15 @@ class WriterList extends React.Component {
     });
   }
 
-  render() {
+  render = () => {
     return (
       <div>
         <h2>Writers</h2>
         <div className="item-list">{this.renderList()}</div>
+        <BookForm writers={this.props.writers} />
       </div>
     );
-  }
+  };
 }
 
 const mapStateToProps = state => {
