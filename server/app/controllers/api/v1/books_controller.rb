@@ -33,12 +33,3 @@ end
 
 # {book: @book, writer: @book.writer}
 
-# @book = Book.build
-        # @book.title = params[:title]
-        # @book.poet = params[:poet]
-        # @book.image = params[:image]
-        # @book.description = params[:description]
-        # @book.publisher = params[:publisher]
-        # @book.review = params[:review]
-        # @book.contributor = params[:contributor]
-        # @book.save

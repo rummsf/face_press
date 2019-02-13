@@ -14,11 +14,7 @@ class HomePage extends React.Component {
       .filter(book => book.year === 2017 || book.year === 2018)
       .map(book => {
         return (
-          <div
-            className="item"
-            key={book.id}
-            // style="display:grid"
-          >
+          <div className="item" key={book.id}>
             <h4>
               {book.title} by {book.poet}
             </h4>
@@ -35,7 +31,6 @@ class HomePage extends React.Component {
       <div>
         <h1>Newest books</h1>
         <div className="item-list">{this.renderNewBooks(books)}</div>
-        {/* <BookList books={books} /> */}
       </div>
     );
   }

@@ -6,6 +6,7 @@ import { fetchBooks } from "../../actions/books";
 
 class WriterShow extends React.Component {
   componentDidMount() {
+    // in order to navigate correctly within nested props
     this.props.fetchWriter(this.props.match.params.id);
     this.props.fetchBooks();
   }
@@ -14,37 +15,21 @@ class WriterShow extends React.Component {
     if (!this.props.writer) {
       return <div>Hang on </div>;
     }
-    const { name, biography, image, url, books } = this.props.writer;
+    const { name, biography, image, url, books, id } = this.props.writer;
     return (
-      <div>
+      <div key={id}>
         <h3>{name}</h3>
         <div>
           <img src={image} alt="nearly" className="img-responsive" />
         </div>
+        <br />
 
-        {/* <div>
-          {this.props.books
-            .filter(book => book.poet === { name })
-            .map(book => {
-              return (
-                <div className="item" key={book.id}>
-                  <h4>{book.title}</h4>
-                  <Link to={`/books/${book.id}`} className="header">
-                    <div>
-                      <img
-                        src={book.image}
-                        alt="nearly"
-                        className="img-responsive"
-                      />
-                    </div>
-                  </Link>
-                  <div style={{ textAlign: "right" }} />
-                </div>
-              );
-            })}
-        </div> */}
         <div>
-          <h4>BIOGRAPHY: {biography}</h4>
+          <h4>
+            BIOGRAPHY:
+            <br />
+            {biography}
+          </h4>
           <div>
             <h3>
               {books.map(book => (

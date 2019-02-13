@@ -29,15 +29,18 @@ class BookShow extends React.Component {
     return (
       <div>
         <h3>{title}</h3>
-        by
-        <Link
-          to={`/writers/${writers.map(writer => writer.id)}`}
-          className="header"
-        >
-          <div>
-            <h4>{writers.map(writer => writer.name)}</h4>
-          </div>
-        </Link>
+        <div>
+          by
+          <Link
+            to={`/writers/${writers.map(writer => writer.id)}`}
+            className="header"
+          >
+            <div>
+              <h3>{writers.map(writer => writer.name)}</h3>
+            </div>
+          </Link>
+        </div>
+        <br />
         <div>
           <img src={image} alt="nearly" className="img-responsive" />
         </div>
