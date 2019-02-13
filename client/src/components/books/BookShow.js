@@ -14,7 +14,6 @@ class BookShow extends React.Component {
 
     const {
       title,
-      poet,
       description,
       pages,
       price,
@@ -29,7 +28,7 @@ class BookShow extends React.Component {
       <div>
         <h3>{title}</h3>
         by
-        <h4>{poet}</h4>
+        <h4>{writers.map(writer => writer.name)}</h4>
         <div>
           <img src={image} alt="nearly" className="img-responsive" />
         </div>
@@ -39,7 +38,6 @@ class BookShow extends React.Component {
         <h5>{pages} pages</h5>
         <h5>{contributor}</h5>
         <h5>{year}</h5>
-        <h5>{writers.map(writer => writer.name)}</h5>
         <h5>£{price}</h5>
       </div>
     );

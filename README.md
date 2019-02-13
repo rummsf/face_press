@@ -9,6 +9,7 @@ Current functionality:
 - Catalogue of books, with index and show pages.
 - Writer index and show pages, with external links.
 - Access associations between writers and books.
+- View multiple books by a writer.
 - Display images for books and writers.
 - Home page with dynamic rendering of most recent publications.
 - CSS styling.

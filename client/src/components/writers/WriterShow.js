@@ -14,13 +14,14 @@ class WriterShow extends React.Component {
     if (!this.props.writer) {
       return <div>Hang on </div>;
     }
-    const { name, biography, image, url } = this.props.writer;
+    const { name, biography, image, url, books } = this.props.writer;
     return (
       <div>
         <h3>{name}</h3>
         <div>
           <img src={image} alt="nearly" className="img-responsive" />
         </div>
+
         {/* <div>
           {this.props.books
             .filter(book => book.poet === { name })
@@ -43,11 +44,21 @@ class WriterShow extends React.Component {
             })}
         </div> */}
         <div>
-          <h4>{biography}</h4>
+          <h4>BIOGRAPHY: {biography}</h4>
           <div>
-            <h4>
-              <a href={url}>GO TO MORE</a>
-            </h4>
+            <h3>
+              {books.map(book => (
+                <>
+                  <div>{book.title}</div>
+                  <img src={book.image} alt="nearly" />
+                </>
+              ))}
+            </h3>
+            <div>
+              <h4>
+                <a href={url}>GO TO MORE</a>
+              </h4>
+            </div>
           </div>
         </div>
       </div>
