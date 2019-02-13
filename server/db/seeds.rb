@@ -5,7 +5,6 @@ WriterBook.destroy_all
 books =[
   {
     title: "Mother; Beautiful Things",
-    poet: "Imogen Cassels",
     image: "https://i.imgur.com/f9n58v3m.jpg",
     year: 2017,
     pages: 36,
