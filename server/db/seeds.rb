@@ -148,7 +148,7 @@ books =[
   },
   {
     title: "Nine Plays",
-    poet: "William Stuart",
+    poet: "Will Stuart",
     image: "https://i.imgur.com/9ajLOKlm.jpg",
     year: 2014,
     pages: 367,
@@ -279,6 +279,14 @@ writers = [
     url: "https://www.poetryfoundation.org/poets/tom-raworth",
     admin_created: true
   },
+  
+    {
+    name: "Riley, Peter",
+    biography: "Peter Riley was born and grew up in London.",
+    image: "https://i.imgur.com/nSnEI53m.jpg",
+    url: "https://www.poetryfoundation.org/poets/tom-raworth",
+    admin_created: true
+  },
  
   {
     name: "Sogumi, Oki",
@@ -294,7 +302,6 @@ writers = [
     url: "https://www.camdram.net/shows/2010-william-fergus-stuart",
     admin_created: true
   },
- 
   {
     name: "Thornton, Timothy",
     biography: "Based in Brighton.  Likes to write about ghosts, foxes, cities + the sea.",
@@ -328,115 +335,153 @@ writers = [
 writers.each {|writer| Writer.create(writer)}
 
 writer_books = [
-  {
-    writer_id: 15,
-    book_id: 49
-  },
-  {
-    writer_id: 16,
-    book_id: 50
-  },
-  {
-    writer_id: 17,
-    book_id: 51
-  },
-  {
-    writer_id: 17,
-    book_id: 52
-  },
-  {
-    writer_id: 18,
-    book_id: 53
-  },
-  {
-    writer_id: 18,
-    book_id: 54
-  },
-  {
-    writer_id: 18,
-    book_id: 55
-  },
-  {
-    writer_id: 18,
-    book_id: 56
-  },
-  {
-    writer_id: 18,
-    book_id: 57
-  },
-  {
-    writer_id: 18,
-    book_id: 58
-  },
-  {
-    writer_id: 18,
-    book_id: 59
-  },
-  {
-    writer_id: 19,
-    book_id: 60
-  },
-  {
-    writer_id: 19,
-    book_id: 61
-  },
-  {
-    writer_id: 19,
-    book_id: 62
-  },
-  {
-    writer_id: 20,
-    book_id: 63
-  },
-  {
-    writer_id: 20,
-    book_id: 64
-  },
-  {
-    writer_id: 21,
-    book_id: 65
-  },
-  {
-    writer_id: 22,
-    book_id: 66
-  },
-  {
-    writer_id: 22,
-    book_id: 67
-  },
-  {
-    writer_id: 23,
-    book_id: 68
-  },
-  {
-    writer_id: 24,
-    book_id: 69
-  },
-  {
-    writer_id: 25,
-    book_id: 70
-  },
-  {
-    writer_id: 26,
-    book_id: 71
-  },
-  {
-    writer_id: 26,
-    book_id: 72
-  },
-  {
-    writer_id:26,
-    book_id: 73
-  },
-    {
-    writer_id:22,
-    book_id: 73
-  },
-    {
-    writer_id:24,
-    book_id: 73
-  },
+  
+{writer_id: Writer.find_by(name: "Cassels, Imogen").id,
+book_id: Book.find_by(title: "Mother; Beautiful Things").id},
+
+{writer_id: Writer.find_by(name: "Dobran, Ryan").id,
+book_id: Book.find_by(title: "The Last Shyness").id},
+
+{writer_id: Writer.find_by(name: "Keen, Jeff").id,
+book_id: Book.find_by(title: "Urgent Film").id},
+
+{writer_id: Writer.find_by(name: "Prynne, J.H.").id,
+book_id: Book.find_by(title: "Graft and Corruption: Shakespeare’s Sonnet 15").id},
+
+{writer_id: Writer.find_by(name: "Raworth, Tom").id,
+book_id: Book.find_by(title: "Average Cabin").id},
+
+{writer_id: Writer.find_by(name: "Sogumi, Oki").id,
+book_id: Book.find_by(title: "Poems (2012-2017)").id},
+
+{writer_id: Writer.find_by(name: "Stuart, Will").id,
+book_id: Book.find_by(title: "Nine Plays").id},
+
+{writer_id: Writer.find_by(name: "Thornton, Timothy").id,
+book_id: Book.find_by(title: "Poems").id},
+
+{writer_id: Writer.find_by(name: "Tiplady, Jonty").id,
+book_id: Book.find_by(title: "‘Sonatine’").id},
+
+{writer_id: Writer.find_by(name: "Toal, Jefferson").id,
+book_id: Book.find_by(title: "Arcobat").id},
+
+{writer_id: Writer.find_by(name: "Wallace-Hadrill, Mike").id,
+book_id: Book.find_by(title: "Nettle Range Bladefear").id},
+
+{writer_id: Writer.find_by(name: "Wallace-Hadrill, Mike").id,
+book_id: Book.find_by(title: "Team You").id}
 ]
-writer_books.each {|writer_book| 
-  writer = WriterBook.create(writer_book)
-}
+writer_books.each {|writer_book| WriterBook.create(writer_book)}
+
+# writer_books = [
+#   {
+#     writer_id: 15,
+#     book_id: 49
+#   },
+#   {
+#     writer_id: 16,
+#     book_id: 50
+#   },
+#   {
+#     writer_id: 17,
+#     book_id: 51
+#   },
+#   {
+#     writer_id: 17,
+#     book_id: 52
+#   },
+#   {
+#     writer_id: 18,
+#     book_id: 53
+#   },
+#   {
+#     writer_id: 18,
+#     book_id: 54
+#   },
+#   {
+#     writer_id: 18,
+#     book_id: 55
+#   },
+#   {
+#     writer_id: 18,
+#     book_id: 56
+#   },
+#   {
+#     writer_id: 18,
+#     book_id: 57
+#   },
+#   {
+#     writer_id: 18,
+#     book_id: 58
+#   },
+#   {
+#     writer_id: 18,
+#     book_id: 59
+#   },
+#   {
+#     writer_id: 19,
+#     book_id: 60
+#   },
+#   {
+#     writer_id: 19,
+#     book_id: 61
+#   },
+#   {
+#     writer_id: 19,
+#     book_id: 62
+#   },
+#   {
+#     writer_id: 20,
+#     book_id: 63
+#   },
+#   {
+#     writer_id: 20,
+#     book_id: 64
+#   },
+#   {
+#     writer_id: 21,
+#     book_id: 65
+#   },
+#   {
+#     writer_id: 22,
+#     book_id: 66
+#   },
+#   {
+#     writer_id: 22,
+#     book_id: 67
+#   },
+#   {
+#     writer_id: 23,
+#     book_id: 68
+#   },
+#   {
+#     writer_id: 24,
+#     book_id: 69
+#   },
+#   {
+#     writer_id: 25,
+#     book_id: 70
+#   },
+#   {
+#     writer_id: 26,
+#     book_id: 71
+#   },
+#   {
+#     writer_id: 26,
+#     book_id: 72
+#   },
+#   {
+#     writer_id:26,
+#     book_id: 73
+#   },
+#     {
+#     writer_id:22,
+#     book_id: 73
+#   },
+#     {
+#     writer_id:24,
+#     book_id: 73
+#   },
+# ]
+

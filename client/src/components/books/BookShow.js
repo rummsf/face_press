@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchBook } from "../../actions";
+import { fetchBook, fetchWriters } from "../../actions";
 
 class BookShow extends React.Component {
   componentDidMount() {
@@ -22,7 +22,8 @@ class BookShow extends React.Component {
       year,
       review,
       contributor,
-      publisher
+      publisher,
+      writers
     } = this.props.book;
     return (
       <div>
@@ -38,6 +39,7 @@ class BookShow extends React.Component {
         <h5>{pages} pages</h5>
         <h5>{contributor}</h5>
         <h5>{year}</h5>
+        <h5>{writers.map(writer => writer.name)}</h5>
         <h5>£{price}</h5>
       </div>
     );
@@ -45,10 +47,13 @@ class BookShow extends React.Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  return { book: state.books[ownProps.match.params.id] };
+  return {
+    book: state.books[ownProps.match.params.id],
+    writers: Object.values(state.writers)
+  };
 };
 
 export default connect(
   mapStateToProps,
-  { fetchBook }
+  { fetchBook, fetchWriters }
 )(BookShow);

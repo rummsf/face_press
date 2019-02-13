@@ -12,7 +12,7 @@ class Api::V1::BooksController < ApplicationController
 
     def create
         @book = Book.new(book_params)
-            @writer =Writer.new(book_params)
+            @writer =Writer.new(writer_params)
 
         if @book.valid? 
             @book.save
@@ -23,9 +23,12 @@ class Api::V1::BooksController < ApplicationController
     private 
 
     def book_params
-        params.require(:book).permit(:title, :poet, :image, :description, :publisher)
+        params.require(:book).permit(:title, :poet, :image, :description, :publisher, :review)
     end
 
+    def writer_params 
+        params.permit(:name)
+    end 
 end
 
 # {book: @book, writer: @book.writer}

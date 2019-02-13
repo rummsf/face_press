@@ -42,7 +42,6 @@ ActiveRecord::Schema.define(version: 2019_01_11_002129) do
   create_table "writer_books", force: :cascade do |t|
     t.integer "writer_id"
     t.integer "book_id"
-    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

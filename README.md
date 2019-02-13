@@ -8,6 +8,7 @@ Current functionality:
 
 - Catalogue of books, with index and show pages.
 - Writer index and show pages, with external links.
+- Access associations between writers and books.
 - Display images for books and writers.
 - Home page with dynamic rendering of most recent publications.
 - CSS styling.
@@ -16,7 +17,6 @@ Current functionality:
 
 Features under development:
 
-- Access associations between writers and books.
 - View multiple authors of a single book.
 - Edit book details, delete book.
 - Add PayPal links for purchases.
