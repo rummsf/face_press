@@ -12,7 +12,7 @@ Current functionality:
 - View multiple books by a writer.
 - Display images for books and writers.
 - Home page with dynamic rendering of most recent publications.
-- CSS styling.
+- Initial CSS styling.
 - Google Auth sign-in.
 - Recommend a book by creating it and adding to the catalogue, with a writer selected from a dropdown menu.
 

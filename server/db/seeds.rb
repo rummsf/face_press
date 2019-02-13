@@ -227,9 +227,9 @@ books.each {|book| Book.create(book)}
 writers = [
   {
     name: "Ambikapathy, Janani",
-    biography: "",
-    image: "",
-    url: "",
+    biography: "Born in Calcutta and studied creative writing at the University of East Anglia. In 2013, she stayed at the University of Stirling as a laureate of the writing scholarship of Charles Wallace. The author is the editor of the literary magazine Almost Island and has just started her PhD at the University of Cambridge.",
+    image: "https://i.imgur.com/KANtPkhm.jpg",
+    url: "https://visualverse.org/writers/janani-ambikapathy/",
     admin_created: true
   },
   {
@@ -373,7 +373,10 @@ book_id: Book.find_by(title: "Nettle Range Bladefear").id},
 book_id: Book.find_by(title: "Team You").id},
 
 {writer_id: Writer.find_by(name: "Ambikapathy, Janani").id,
-book_id: Book.find_by(title: "Nectar Feed").id}
+book_id: Book.find_by(title: "Nectar Feed").id},
+
+{writer_id: Writer.find_by(name: "Riley, Peter").id,
+book_id: Book.find_by(title: "Regrets, after Joachim du Bellay and others").id}
 
 ]
 writer_books.each {|writer_book| WriterBook.create(writer_book)}

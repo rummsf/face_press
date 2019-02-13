@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { fetchBook, fetchWriters } from "../../actions";
+import { Link } from "react-router-dom";
 
 class BookShow extends React.Component {
   componentDidMount() {
@@ -24,11 +25,19 @@ class BookShow extends React.Component {
       publisher,
       writers
     } = this.props.book;
+
     return (
       <div>
         <h3>{title}</h3>
         by
-        <h4>{writers.map(writer => writer.name)}</h4>
+        <Link
+          to={`/writers/${writers.map(writer => writer.id)}`}
+          className="header"
+        >
+          <div>
+            <h4>{writers.map(writer => writer.name)}</h4>
+          </div>
+        </Link>
         <div>
           <img src={image} alt="nearly" className="img-responsive" />
         </div>

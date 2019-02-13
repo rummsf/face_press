@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { fetchWriter } from "../../actions";
 import { fetchBooks } from "../../actions/books";
 
@@ -50,7 +50,15 @@ class WriterShow extends React.Component {
               {books.map(book => (
                 <>
                   <div>{book.title}</div>
-                  <img src={book.image} alt="nearly" />
+                  <Link to={`/books/${book.id}`} className="header">
+                    <div>
+                      <img
+                        src={book.image}
+                        alt="nearly"
+                        className="img-responsive"
+                      />
+                    </div>
+                  </Link>
                 </>
               ))}
             </h3>

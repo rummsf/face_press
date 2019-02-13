@@ -36,7 +36,7 @@ class BookList extends React.Component {
           <div className="item">
             <div style={{ textAlign: "center" }}>
               <h4>
-                {book.title} by {book.writers.map(writer => writer.name)}
+                {book.title} by <br /> {book.writers.map(writer => writer.name)}
               </h4>
             </div>
             <Link to={`/books/${book.id}`} className="header">
