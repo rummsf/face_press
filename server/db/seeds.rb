@@ -18,7 +18,6 @@ books =[
   },
   {
     title: "Confection",
-    poet: "Ryan Dobran",
     image: "https://i.imgur.com/Sox6bqkm.jpg",
     year: 2011,
     pages: 16,
@@ -31,7 +30,6 @@ books =[
   },
   {
     title: "The Artwar Reader",
-    poet: "Jeff Keen",
     image: "https://i.imgur.com/eHtwjcHm.jpg",
     year: 2012,
     pages: 16,
@@ -44,7 +42,6 @@ books =[
   },
   {
     title: "Urgent Film",
-    poet: "Jeff Keen",
     image: "https://i.imgur.com/5iJhRrkm.jpg",
     year: 2012,
     pages: 12,
@@ -57,7 +54,6 @@ books =[
   },
   {
     title: "Al-Dente",
-    poet: "J.H. Prynne",
     image: "https://i.imgur.com/R8fgvdCm.gif",
     year: 2014,
     pages: 250,
@@ -70,7 +66,6 @@ books =[
   },
   {
     title: "Graft and Corruption: Shakespeare’s Sonnet 15",
-    poet: "J.H. Prynne",
     image: "https://i.imgur.com/QZ5705em.jpg",
     year: 2015,
     pages: 170,
@@ -83,7 +78,6 @@ books =[
   },
   {
     title: "The Last Shyness",
-    poet: "Ryan Dobran",
     image: "https://i.imgur.com/m26MzTFm.jpg",
     year: 2017,
     pages: 32,
@@ -96,7 +90,6 @@ books =[
   },
   {
     title: "Got On",
-    poet: "Tom Raworth",
     image: "https://i.imgur.com/Lqk1lpFm.jpg",
     year: 2011,
     pages: 20,
@@ -109,7 +102,6 @@ books =[
   },
   {
     title: "Average Cabin",
-    poet: "Tom Raworth",
     image: "https://i.imgur.com/53k1ON3m.jpg",
     year: 2015,
     pages: 250,
@@ -122,7 +114,6 @@ books =[
   },
   {
     title: "Poems (2012-2017)",
-    poet: "Oki Sogumi",
     image: "https://i.imgur.com/ph1qSUlm.jpg",
     year: 2017,
     pages: 144,
@@ -135,7 +126,6 @@ books =[
   },
   {
     title: "Poems",
-    poet: "Timothy Thornton",
     image: "https://i.imgur.com/hLtux75m.jpg",
     year: 2017,
     pages: 28,
@@ -148,7 +138,6 @@ books =[
   },
   {
     title: "Nine Plays",
-    poet: "Will Stuart",
     image: "https://i.imgur.com/9ajLOKlm.jpg",
     year: 2014,
     pages: 367,
@@ -161,7 +150,6 @@ books =[
   },
   {
     title: "Regrets, after Joachim du Bellay and others",
-    poet: "Peter Riley",
     image: "https://i.imgur.com/DOFF9VSm.jpg",
     year: 2013,
     pages: 20,
@@ -174,7 +162,6 @@ books =[
   },
   {
     title: "‘Sonatine’",
-    poet: "Jonty Tiplady",
     image: "https://i.imgur.com/n43Oh5Nm.jpg",
     year: 2015,
     pages: 70,
@@ -187,7 +174,6 @@ books =[
   },
   {
     title: "Arcobat",
-    poet: "Jefferson Toal",
     image: "https://i.imgur.com/AFmPvTHm.jpg",
     year: 2012,
     pages: 16,
@@ -200,7 +186,6 @@ books =[
   },
   {
     title: "Nettle Range Bladefear",
-    poet: "Wallace-Hadrill, Mike",
     image: "https://i.imgur.com/0RdwiXTm.jpg",
     year: 2009,
     pages: 20,
@@ -213,7 +198,6 @@ books =[
   },
   {
     title: "Team You",
-    poet: "Wallace-Hadrill, Mike",
     image: "https://i.imgur.com/ShKyh8tm.jpg",
     year: 2012,
     pages: 24,
@@ -227,7 +211,6 @@ books =[
   {
     title: "Nectar Feed",
     image: "https://i.imgur.com/FLDWeE5m.gif",
-    poet: "Janani Ambikapathy",
     # poets: ["Janani Ambikapathy", "Laynie Browne", "Hannah Ensor and Laura Wetherington", "Amy Evans", "Irum Fazal", "Fanny Howe", "Louise Landes Levi", "Janice A. Lowe", "Eileen Myles", "Gizem Okulu", "Julie Patton", "Nisha Ramayya", "Ariana Reines", "Lisa Robertson", "Sophie Robinson", "Oki Sogumi", "Verity Spott", "Wendy Trevino", "Rosa van Hensbergen", "Naomi Weber"],
     year: 2018,
     pages: 21,
