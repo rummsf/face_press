@@ -1,5 +1,4 @@
 import React from "react";
-// import _ from "lodash";
 import { connect } from "react-redux";
 import { fetchBooks } from "../actions/books";
 import { Link } from "react-router-dom";
@@ -33,7 +32,7 @@ class BookList extends React.Component {
   }
 
   renderList() {
-    return this.props.books.map(book => {
+    return this.state.books.map(book => {
       return (
         <div className="item" key={book.id}>
           {this.renderAdmin(book)}
@@ -69,7 +68,7 @@ class BookList extends React.Component {
 
   handleClick = () => {
     this.setState({
-      books: this.props.books.sort()
+      books: [...this.props.books].sort()
     });
   };
 
