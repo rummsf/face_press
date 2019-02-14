@@ -10,6 +10,7 @@ import reducers from "./reducers";
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
   reducers,
+  //Thunk return actions as functions instead of objects, delays dispatch of an action
   composeEnhancers(applyMiddleware(reduxThunk))
 );
 

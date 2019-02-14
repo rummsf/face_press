@@ -25,7 +25,9 @@ class BookForm extends React.Component {
   };
 
   onSubmit = formValues => {
+    console.log("a");
     this.props.onSubmit(formValues);
+    console.log("b");
   };
 
   render() {

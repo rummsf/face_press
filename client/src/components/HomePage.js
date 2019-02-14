@@ -2,7 +2,6 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchBooks } from "../actions/books";
 import "../containers/ItemList.css";
-// import BookList from "../containers/BookList";
 
 class HomePage extends React.Component {
   componentDidMount() {
@@ -16,7 +15,7 @@ class HomePage extends React.Component {
         return (
           <div className="item" key={book.id}>
             <h4>
-              {book.title} by {book.poet}
+              {book.title} by {book.writers.map(writer => writer.name)}
             </h4>
             <img src={book.image} alt="nearly" />
           </div>

@@ -6,8 +6,8 @@ import {
   CREATE_BOOK,
   FETCH_BOOK,
   FETCH_BOOKS,
-  DELETE_BOOK,
-  EDIT_BOOK,
+  // DELETE_BOOK,
+  // EDIT_BOOK,
   //
   FETCH_WRITER,
   FETCH_WRITERS
@@ -30,7 +30,7 @@ export const createBook = formValues => async (dispatch, getState) => {
   const { userId } = getState().auth;
   const response = await items.post("/api/v1/books", { ...formValues, userId });
   dispatch({ type: CREATE_BOOK, payload: response.data });
-  history.push("/");
+  history.push("/books");
 };
 
 export const fetchBooks = () => async dispatch => {
@@ -43,17 +43,17 @@ export const fetchBook = id => async dispatch => {
   dispatch({ type: FETCH_BOOK, payload: response.data });
 };
 
-export const editBook = (id, formValues) => async dispatch => {
-  const response = await items.patch(`api/v1/books/${id}`, formValues);
-  dispatch({ type: EDIT_BOOK, payload: response.data });
-  history.push("/");
-};
+// export const editBook = (id, formValues) => async dispatch => {
+//   const response = await items.patch(`api/v1/books/${id}`, formValues);
+//   dispatch({ type: EDIT_BOOK, payload: response.data });
+//   history.push("/");
+// };
 
-export const deleteBook = id => async dispatch => {
-  await items.delete(`/api/v1/books/${id}`);
-  dispatch({ type: DELETE_BOOK, payload: id });
-  history.push("/");
-};
+// export const deleteBook = id => async dispatch => {
+//   await items.delete(`/api/v1/books/${id}`);
+//   dispatch({ type: DELETE_BOOK, payload: id });
+//   history.push("/");
+// };
 
 //WRITERS
 

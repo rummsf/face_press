@@ -10,6 +10,10 @@ class BookList extends React.Component {
     this.props.fetchBooks();
   }
 
+  state = {
+    books: this.props.books
+  };
+
   renderAdmin(book) {
     if (book.userId === this.props.currentUserId) {
       return (
@@ -63,13 +67,25 @@ class BookList extends React.Component {
     }
   }
 
+  handleClick = () => {
+    this.setState({
+      books: this.props.books.sort()
+    });
+  };
+
   render() {
     return (
       <div>
         <h2>Books</h2>
         <div>
-          <div className="item-list">{this.renderList()}</div>
           <div className="item-list">{this.renderCreate()}</div>
+          <button
+            className="ui button primary"
+            onClick={() => this.handleClick()}
+          >
+            Sort!
+          </button>
+          <div className="item-list">{this.renderList()}</div>
         </div>
       </div>
     );

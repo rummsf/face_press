@@ -271,8 +271,8 @@ writers = [
     {
     name: "Riley, Peter",
     biography: "Peter Riley was born and grew up in London.",
-    image: "https://i.imgur.com/nSnEI53m.jpg",
-    url: "https://www.poetryfoundation.org/poets/tom-raworth",
+    image: "https://i.imgur.com/CWvw8f0m.jpg",
+    url: "http://www.forwardartsfoundation.org/poet/peter-riley/",
     admin_created: true
   },
  
@@ -323,6 +323,9 @@ writers = [
 writers.each {|writer| Writer.create(writer)}
 
 writer_books = [
+
+{writer_id: Writer.find_by(name: "Ambikapathy, Janani").id,
+book_id: Book.find_by(title: "Nectar Feed").id},
   
 {writer_id: Writer.find_by(name: "Cassels, Imogen").id,
 book_id: Book.find_by(title: "Mother; Beautiful Things").id},
@@ -351,6 +354,9 @@ book_id: Book.find_by(title: "Average Cabin").id},
 {writer_id: Writer.find_by(name: "Raworth, Tom").id,
 book_id: Book.find_by(title: "Got On").id},
 
+{writer_id: Writer.find_by(name: "Riley, Peter").id,
+book_id: Book.find_by(title: "Regrets, after Joachim du Bellay and others").id},
+
 {writer_id: Writer.find_by(name: "Sogumi, Oki").id,
 book_id: Book.find_by(title: "Poems (2012-2017)").id},
 
@@ -370,13 +376,7 @@ book_id: Book.find_by(title: "Arcobat").id},
 book_id: Book.find_by(title: "Nettle Range Bladefear").id},
 
 {writer_id: Writer.find_by(name: "Wallace-Hadrill, Mike").id,
-book_id: Book.find_by(title: "Team You").id},
-
-{writer_id: Writer.find_by(name: "Ambikapathy, Janani").id,
-book_id: Book.find_by(title: "Nectar Feed").id},
-
-{writer_id: Writer.find_by(name: "Riley, Peter").id,
-book_id: Book.find_by(title: "Regrets, after Joachim du Bellay and others").id}
+book_id: Book.find_by(title: "Team You").id}
 
 ]
 writer_books.each {|writer_book| WriterBook.create(writer_book)}
