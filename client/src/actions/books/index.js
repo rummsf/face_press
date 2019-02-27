@@ -23,17 +23,14 @@ export const signOut = userId => {
 
 //Async: function always returns a promise, Await: pauses until the promise has returned result first
 export const createBook = formValues => async (dispatch, getState) => {
-  console.log("c");
   const { userId } = getState().auth;
   const response = await books.post("/api/v1/books", {
     ...formValues,
     userId: userId
   });
-  console.log("d");
   dispatch({ type: CREATE_BOOK, payload: response.data });
   //Programmatic navigation, history object created by the BrowserRouter
   history.push("/books");
-  console.log("e");
 };
 
 export const fetchBooks = () => async dispatch => {

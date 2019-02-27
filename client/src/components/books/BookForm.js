@@ -25,9 +25,7 @@ class BookForm extends React.Component {
   };
 
   onSubmit = formValues => {
-    console.log("a");
     this.props.onSubmit(formValues);
-    console.log("b");
   };
 
   render() {
@@ -49,6 +47,7 @@ class BookForm extends React.Component {
           component={this.renderInput}
           label="Description:"
         />
+        <Field name="price" component={this.renderInput} label="Price:" />
         <Field name="image" component={this.renderInput} label="Image URL:" />
         <Field
           name="publisher"

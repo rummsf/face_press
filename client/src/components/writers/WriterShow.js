@@ -51,6 +51,7 @@ class WriterShow extends React.Component {
               <h4>
                 <a href={url}>GO TO MORE</a>
               </h4>
+              <br />
             </div>
           </div>
         </div>

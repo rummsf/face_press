@@ -7,10 +7,25 @@ import "./ItemList.css";
 class BookList extends React.Component {
   componentDidMount() {
     this.props.fetchBooks();
+    this.getSortedBooks();
   }
 
   state = {
-    books: this.props.books
+    books: this.props.books,
+    sortedBooks: [],
+    sorted: false
+  };
+
+  getSortedBooks = () => {
+    var obj = [...this.props.books];
+    obj.sort(function(a, b) {
+      if (a.title.toLowerCase() < b.title.toLowerCase()) return -1;
+      if (a.title.toLowerCase() > b.title.toLowerCase()) return 1;
+      return 0;
+    });
+    this.setState({
+      sortedBooks: obj
+    });
   };
 
   renderAdmin(book) {
@@ -32,7 +47,17 @@ class BookList extends React.Component {
   }
 
   renderList() {
-    return this.state.books.map(book => {
+    let allBooks = [];
+    if (this.state.sorted) {
+      if (this.state.sortedBooks === [] && this.state.books) {
+        this.getSortedBooks();
+      } else {
+        allBooks = this.state.sortedBooks;
+      }
+    } else {
+      allBooks = this.state.books;
+    }
+    return allBooks.map(book => {
       return (
         <div className="item" key={book.id}>
           {this.renderAdmin(book)}
@@ -66,9 +91,15 @@ class BookList extends React.Component {
     }
   }
 
+  // handleClick = () => {
+  //   this.setState({
+  //     books: [...this.props.books].sort()
+  //   });
+  // };
+
   handleClick = () => {
     this.setState({
-      books: [...this.props.books].sort()
+      sorted: !this.state.sorted
     });
   };
 
@@ -82,7 +113,7 @@ class BookList extends React.Component {
             className="ui button primary"
             onClick={() => this.handleClick()}
           >
-            Sort!
+            {this.state.sorted ? "Unsort!" : "Sort!"}
           </button>
           <div className="item-list">{this.renderList()}</div>
         </div>
@@ -104,3 +135,7 @@ export default connect(
   mapStateToProps,
   { fetchBooks }
 )(BookList);
+
+// handleClick = () => {
+//  this.props.books.sort(book.title)
+// }
