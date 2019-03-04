@@ -16,17 +16,17 @@ class BookList extends React.Component {
     sorted: false
   };
 
-  getSortedBooks = () => {
-    var obj = [...this.props.books];
-    obj.sort(function(a, b) {
+  getSortedBooks() {
+    let sortedBooks = [...this.props.books];
+    sortedBooks.sort(function(a, b) {
       if (a.title.toLowerCase() < b.title.toLowerCase()) return -1;
       if (a.title.toLowerCase() > b.title.toLowerCase()) return 1;
       return 0;
     });
     this.setState({
-      sortedBooks: obj
+      sortedBooks: sortedBooks
     });
-  };
+  }
 
   renderAdmin(book) {
     if (book.userId === this.props.currentUserId) {
@@ -91,17 +91,11 @@ class BookList extends React.Component {
     }
   }
 
-  // handleClick = () => {
-  //   this.setState({
-  //     books: [...this.props.books].sort()
-  //   });
-  // };
-
-  handleClick = () => {
+  handleClick() {
     this.setState({
       sorted: !this.state.sorted
     });
-  };
+  }
 
   render() {
     return (
