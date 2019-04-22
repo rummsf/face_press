@@ -8,11 +8,9 @@ import {
   FETCH_BOOKS,
   // DELETE_BOOK,
   // EDIT_BOOK,
-  //
   FETCH_WRITER,
-  FETCH_WRITERS
-
-  // UPDATE_FILTER
+  FETCH_WRITERS,
+  UPDATE_FILTER
 } from "./types";
 
 export const signIn = userId => {
@@ -69,6 +67,6 @@ export const fetchWriter = id => async dispatch => {
 
 // FILTER
 
-// export function updateFilter(newFilter) {
-//   return { type: UPDATE_FILTER, newFilter };
-// }
+export function updateFilter(newFilter) {
+  return { type: UPDATE_FILTER, newFilter };
+}

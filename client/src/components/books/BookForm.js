@@ -54,7 +54,11 @@ class BookForm extends React.Component {
           component={this.renderInput}
           label="Publisher:"
         />
-        <Field name="review" component={this.renderInput} label="Thoughts:" />
+        <Field
+          name="review"
+          component={this.renderInput}
+          label="Why would you like to add this book?"
+        />
         <Field name="user" component={this.renderInput} label="Who are you?" />
         <button className="ui button primary">Submit</button>
       </form>

@@ -11,10 +11,13 @@ class BookList extends React.Component {
   }
 
   state = {
-    books: this.props.books,
     sortedBooks: [],
     sorted: false,
     searchQuery: ""
+  };
+
+  getNewestBooks = allBooks => {
+    return allBooks.filter(book => book.year === 2017 || book.year === 2018);
   };
 
   changeSearchQuery = searchQuery => {
@@ -35,7 +38,7 @@ class BookList extends React.Component {
     });
   }
 
-  renderAdmin(book) {
+  renderMember(book) {
     if (book.userId === this.props.currentUserId) {
       return (
         <div className="right floated content">
@@ -56,31 +59,32 @@ class BookList extends React.Component {
   renderList() {
     let allBooks = [];
     if (this.state.sorted) {
-      if (this.state.sortedBooks === [] && this.state.books) {
+      if (this.state.sortedBooks === [] && this.props.books.length > 0) {
         this.getSortedBooks();
       } else {
         allBooks = this.state.sortedBooks;
       }
     } else {
-      allBooks = this.state.books;
-      // [
-      //   ...this.state.books.filter(
-      //     book =>
-      //       book.title
-      //         .toLowerCase()
-      //         .includes(this.props.searchQuery.toLowerCase()) ||
-      //       book.writers.map(writer =>
-      //         writer.name
-      //           .toLowerCase()
-      //           .includes(this.props.searchQuery.toLowerCase())
-      //       )
-      //   )
-      // ];
+      allBooks = this.props.books.filter(
+        book =>
+          book.title
+            .toLowerCase()
+            .includes(this.state.searchQuery.toLowerCase()) ||
+          book.writers.filter(writer =>
+            writer.name
+              .toLowerCase()
+              .includes(this.state.searchQuery.toLowerCase())
+          ).length > 0
+      );
     }
-    return allBooks.map(book => {
+
+    const booksToRender =
+      this.props.match.path === "/" ? this.getNewestBooks(allBooks) : allBooks;
+
+    return booksToRender.map(book => {
       return (
         <div className="item" key={book.id}>
-          {this.renderAdmin(book)}
+          {this.renderMember(book)}
           <div className="item">
             <div style={{ textAlign: "center" }}>
               <h4>
@@ -106,7 +110,7 @@ class BookList extends React.Component {
               <input type="hidden" name="currency_code" value="GBP" />
               <input type="hidden" name="button_subtype" value="products" />
               <input type="hidden" name="no_note" value="0" />
-              <input type="hidden" name="shipping" value="3.00" />
+              <input type="hidden" name="shipping" value="2.95" />
               <input type="hidden" name="add" value="1" />
               <input
                 type="hidden"
@@ -155,7 +159,7 @@ class BookList extends React.Component {
   render() {
     return (
       <div>
-        <h2>Books</h2>
+        <h2>{this.props.match.path === "/" ? "Newest Books" : "Books"}</h2>
         <input onChange={event => this.changeSearchQuery(event.target.value)} />
         <div>
           <div className="item-list">{this.renderCreate()}</div>
@@ -167,6 +171,7 @@ class BookList extends React.Component {
           </button>
           <div className="item-list">{this.renderList()}</div>
         </div>
+        {/* <HomePage allBooks={this.renderList()} /> */}
       </div>
     );
   }
