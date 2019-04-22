@@ -13,7 +13,14 @@ class BookList extends React.Component {
   state = {
     books: this.props.books,
     sortedBooks: [],
-    sorted: false
+    sorted: false,
+    searchQuery: ""
+  };
+
+  changeSearchQuery = searchQuery => {
+    this.setState({
+      searchQuery
+    });
   };
 
   getSortedBooks() {
@@ -56,6 +63,19 @@ class BookList extends React.Component {
       }
     } else {
       allBooks = this.state.books;
+      // [
+      //   ...this.state.books.filter(
+      //     book =>
+      //       book.title
+      //         .toLowerCase()
+      //         .includes(this.props.searchQuery.toLowerCase()) ||
+      //       book.writers.map(writer =>
+      //         writer.name
+      //           .toLowerCase()
+      //           .includes(this.props.searchQuery.toLowerCase())
+      //       )
+      //   )
+      // ];
     }
     return allBooks.map(book => {
       return (
@@ -73,6 +93,41 @@ class BookList extends React.Component {
               </div>
             </Link>
             <div style={{ textAlign: "right" }} />
+            <form
+              target="paypal"
+              action="https://www.paypal.com/cgi-bin/webscr"
+              method="post"
+            >
+              <input type="hidden" name="cmd" value="_cart" />
+              <input type="hidden" name="business" value="irum@cantab.net" />
+              <input type="hidden" name="lc" value="AR" />
+              <input type="hidden" name="item_name" value={book.title} />
+              <input type="hidden" name="amount" value={book.price} />
+              <input type="hidden" name="currency_code" value="GBP" />
+              <input type="hidden" name="button_subtype" value="products" />
+              <input type="hidden" name="no_note" value="0" />
+              <input type="hidden" name="shipping" value="3.00" />
+              <input type="hidden" name="add" value="1" />
+              <input
+                type="hidden"
+                name="bn"
+                value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest"
+              />
+              <input
+                type="image"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
+                border="0"
+                name="submit"
+                alt="PayPal - The safer, easier way to pay online!"
+              />
+              <img
+                alt=""
+                border="0"
+                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                width="1"
+                height="1"
+              />
+            </form>
           </div>
         </div>
       );
@@ -101,6 +156,7 @@ class BookList extends React.Component {
     return (
       <div>
         <h2>Books</h2>
+        <input onChange={event => this.changeSearchQuery(event.target.value)} />
         <div>
           <div className="item-list">{this.renderCreate()}</div>
           <button
@@ -129,7 +185,3 @@ export default connect(
   mapStateToProps,
   { fetchBooks }
 )(BookList);
-
-// handleClick = () => {
-//  this.props.books.sort(book.title)
-// }
