@@ -160,7 +160,17 @@ class BookList extends React.Component {
     return (
       <div>
         <h2>{this.props.match.path === "/" ? "Newest Books" : "Books"}</h2>
-        <input onChange={event => this.changeSearchQuery(event.target.value)} />
+        <div class="ui icon input">
+          <input
+            className="prompt"
+            type="text"
+            placeholder="Search by title or writer"
+            onChange={event => this.changeSearchQuery(event.target.value)}
+          />
+          <i className="search icon" />
+        </div>
+        <br />
+
         <div>
           <div className="item-list">{this.renderCreate()}</div>
           <button
@@ -171,7 +181,6 @@ class BookList extends React.Component {
           </button>
           <div className="item-list">{this.renderList()}</div>
         </div>
-        {/* <HomePage allBooks={this.renderList()} /> */}
       </div>
     );
   }
