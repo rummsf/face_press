@@ -20,3 +20,8 @@ Features under development:
 - Edit book details, delete book.
 - Add PayPal links for purchases.
 - Clean writer names, to remove comma and to appear "forename surname"
+
+----------------------------------------------------------------------------------------------------------------------------
+"npm start" to run front-end
+"rails s" to run back-end
+(CORS plugin: https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
