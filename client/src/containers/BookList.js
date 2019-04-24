@@ -96,42 +96,6 @@ class BookList extends React.Component {
                 <img src={book.image} alt="nearly" className="img-responsive" />
               </div>
             </Link>
-            <div style={{ textAlign: "right" }} />
-            <form
-              target="paypal"
-              action="https://www.paypal.com/cgi-bin/webscr"
-              method="post"
-            >
-              <input type="hidden" name="cmd" value="_cart" />
-              <input type="hidden" name="business" value="irum@cantab.net" />
-              <input type="hidden" name="lc" value="AR" />
-              <input type="hidden" name="item_name" value={book.title} />
-              <input type="hidden" name="amount" value={book.price} />
-              <input type="hidden" name="currency_code" value="GBP" />
-              <input type="hidden" name="button_subtype" value="products" />
-              <input type="hidden" name="no_note" value="0" />
-              <input type="hidden" name="shipping" value="2.95" />
-              <input type="hidden" name="add" value="1" />
-              <input
-                type="hidden"
-                name="bn"
-                value="PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest"
-              />
-              <input
-                type="image"
-                src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif"
-                border="0"
-                name="submit"
-                alt="PayPal - The safer, easier way to pay online!"
-              />
-              <img
-                alt=""
-                border="0"
-                src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-                width="1"
-                height="1"
-              />
-            </form>
           </div>
         </div>
       );
