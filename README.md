@@ -17,4 +17,3 @@ Functionality:
 
 "npm start" to run front-end
 "rails s" to run back-end
-(CORS plugin: https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
