@@ -15,5 +15,4 @@ Functionality:
 
 ---
 
-"npm start" to run front-end
-"rails s" to run back-end
+- Run commands: "npm start" (client) "rails s" (server)
